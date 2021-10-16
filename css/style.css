@@ -1,0 +1,306 @@
+/*--------------------------------------------------------------------------------------------------------------
+*  Template
+*--------------------------------------------------------------------------------------------------------------*/
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+html {
+  font-size: 18px;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+img {
+  backface-visibility: hidden;
+  display: block;
+}
+.c-3 {
+  color: #333;
+}
+.c-6 {
+  color: #666;
+}
+.c-9 {
+  color: #999;
+}
+.container {
+  text-align: center;
+  max-width: 106.66666667rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+.container .wrap {
+  font-size: 0rem;
+}
+.container .wrap header {
+  width: 100%;
+  height: 5.55555556rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: #fff;
+  z-index: 10;
+}
+.container .wrap header h1 {
+  width: 6.66666667rem;
+  height: 2.16666667rem;
+  margin-top: 1.66666667rem;
+  margin-right: 8.88888889rem;
+  margin-bottom: 0rem;
+  margin-left: 0rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.container .wrap header h1 a,
+.container .wrap header h1 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container .wrap header nav {
+  display: inline-block;
+  vertical-align: top;
+  color: #333;
+}
+.container .wrap header nav a {
+  font-size: 0.94444444rem;
+  font-weight: 700;
+  display: inline-block;
+  width: 9.05555556rem;
+  height: 5.55555556rem;
+  line-height: 5.55555556rem;
+  vertical-align: top;
+}
+.container .wrap header nav a.login {
+  font-weight: 400;
+  margin-left: 14.88888889rem;
+  width: auto;
+  display: none;
+}
+.container .wrap header nav a.logout {
+  margin-left: 7.72222222rem;
+  font-weight: 400;
+  position: relative;
+}
+.container .wrap header nav a.logout img {
+  width: 2.22222222rem;
+  height: 2.22222222rem;
+  display: inline-block;
+  margin-right: 0.55555556rem;
+}
+.container .wrap header nav a.logout:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -1.44444444rem;
+  top: 2.16666667rem;
+  left: auto;
+  bottom: auto;
+  background-repeat: no-repeat;
+  background-image: url('../img/icon_arrow_down.png');
+  background-size: contain;
+  width: 1.05555556rem;
+  height: 1.05555556rem;
+}
+.container .wrap header nav a:hover {
+  color: #5F4EEE;
+}
+.container .wrap header nav a.login:hover,
+.container .wrap header nav a.logout:hover {
+  color: #333;
+}
+.container .wrap header nav .log-box {
+  display: inline-block;
+}
+.container .wrap header .nav-list {
+  width: 100%;
+  height: 23.44444444rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  display: none;
+}
+.container .wrap header .nav-list ul {
+  width: 27.77777778rem;
+  position: absolute;
+  left: 50%;
+  top: 0rem;
+  right: auto;
+  bottom: auto;
+  margin-left: -10rem;
+}
+.container .wrap header .nav-list ul li {
+  font-size: 0.88888889rem;
+  display: inline-block;
+  vertical-align: top;
+  width: 9.05555556rem;
+}
+.container .wrap header .nav-list ul li p {
+  margin-top: 1.66666667rem;
+  font-weight: 700;
+}
+.container .wrap header .nav-list ul li p s {
+  font-size: 0.72222222rem;
+  color: #FFCC00;
+}
+.container .wrap header .nav-list ul li a {
+  display: block;
+  margin-top: 0.55555556rem;
+  color: #666;
+}
+.container .wrap header .nav-list ul li a:hover {
+  color: #5F4EEE;
+}
+.container .wrap header .nav-list ul li:last-child p a {
+  color: #333;
+}
+.container .wrap header .nav-list.on {
+  display: block;
+}
+.container .wrap header .my-page {
+  position: absolute;
+  left: 50%;
+  top: 3.88888889rem;
+  right: auto;
+  bottom: auto;
+  margin-left: 23.88888889rem;
+  background-repeat: no-repeat;
+  background-image: url('../img/img_mypage.png');
+  background-size: contain;
+  width: 11.94444444rem;
+  height: 13.05555556rem;
+  padding-top: 2.5rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 2.77777778rem;
+  text-align: left;
+  box-sizing: border-box;
+  display: none;
+}
+.container .wrap header .my-page a {
+  font-size: 0.88888889rem;
+  color: #999;
+  margin-bottom: 0.66666667rem;
+  display: block;
+  width: auto;
+}
+.container .wrap header .my-page a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+.container .wrap header.on nav .logout:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -1.44444444rem;
+  top: 2.16666667rem;
+  left: auto;
+  bottom: auto;
+  background-repeat: no-repeat;
+  background-image: url('../img/icon_arrow_up.png');
+  background-size: contain;
+  width: 1.05555556rem;
+  height: 1.05555556rem;
+}
+.container .wrap header.on nav .logout img {
+  border: 1px solid #5F4EEE;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.container .wrap header.on .my-page {
+  display: block;
+}
+.container .wrap .dim {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0rem;
+  top: 0rem;
+  right: auto;
+  bottom: auto;
+  background-color: #000;
+  opacity: 0.4;
+  display: none;
+}
+.container .wrap .dim.on {
+  display: block;
+}
+.container .wrap article {
+  width: 71.11111111rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .wrap article .top {
+  width: 100%;
+  height: 8.33333333rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 1.66666667rem;
+}
+.container .wrap article .top.m4 {
+  background-image: url('../img/img_product.png');
+}
+.container .wrap article .top h2 {
+  font-size: 1.44444444rem;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+.container .wrap article aside {
+  font-size: 0.83333333rem;
+  color: #333;
+  font-weight: 700;
+  width: 10rem;
+  text-align: left;
+  margin-right: 1.11111111rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.container .wrap article aside p {
+  line-height: 1.44444444rem;
+  padding-bottom: 0.55555556rem;
+  border-bottom: 1px solid #333;
+  margin-bottom: 0.61111111rem;
+}
+.container .wrap article aside ul li {
+  margin-bottom: 1.66666667rem;
+}
+.container .wrap article section {
+  width: 60rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.container .wrap article section .tit-wrap {
+  text-align: left;
+  padding-bottom: 0.55555556rem;
+  border-bottom: 1px solid #333;
+  margin-bottom: 1.66666667rem;
+}
+.container .wrap article section .tit-wrap h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.44444444rem;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap article section .tit-wrap .crumb {
+  font-size: 0.66666667rem;
+  color: #999;
+  float: right;
+  margin-top: 0.27777778rem;
+}
+.container .wrap article section .visual {
+  width: 60rem;
+  height: 22.33333333rem;
+  background-color: #F6F7FA;
+}
+.container .wrap article section .visual img {
+  width: 26.66666667rem;
+  height: 22.33333333rem;
+  margin-left: 3.33333333rem;
+}
+/*# sourceMappingURL=style.css.map */

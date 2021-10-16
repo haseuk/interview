@@ -1,0 +1,86 @@
+@import "asset";
+@use-rem: true;
+@rem: 18;
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+html { font-size: 18px; font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+img { backface-visibility: hidden; .block; }
+.c-3 { color:#333; }
+.c-6 { color:#666; }
+.c-9 { color:#999; }
+
+.container { .tc; .max-w(1920); .mh-c; .bgc(#fff);
+  .wrap { .fs(0);
+    header { .wh(100%,100); .mh-c; .rel; .bgc(#fff); z-index: 10;
+      h1 { .wh(120,39); .m(30,160,0,0); .ib; .vat;
+        a, img { .block; .f; }
+      }
+      nav { .ib; .vat; .c-3;
+        a { .fs(17); .bold; .ib; .wh(163,100); .lh(100); .vat;
+          &.login { .regular; .ml(268); width: auto; .hide; }
+          &.logout { .ml(139); .regular; .rel;
+            img { .wh(40,40); .ib; .mr(10); }
+            &:after { .cnt; .abs; .rt(-26,39); .contain('../img/icon_arrow_down.png'); .wh(19,19); }
+          }
+          &:hover { color:#5F4EEE; }
+          &.login:hover, &.logout:hover { .c-3; }
+        }
+        .log-box { .ib; }
+      }
+      .nav-list { .wh(100%,422); .bgc(#fff); .rel; z-index: 10; .hide;
+        ul { .w(500); .abs; .lt(50%,0); .ml(-180);
+          li { .fs(16); .ib; .vat; .w(163);
+            p { .mt(30); .bold;
+              s { .fs(13); color:#FFCC00; }
+            }
+            a { .block; .mt(10); .c-6;
+              &:hover { color:#5F4EEE; }
+            }
+            &:last-child p a { .c-3; }
+          }
+        }
+        &.on { .block; }
+      }
+      .my-page { .abs; .lt(50%,70); .ml(430); .contain('../img/img_mypage.png'); .wh(215,235); .p(45,0,0,50); .tl; .-box; .hide;
+        a { .fs(16); .c-9; .mb(12); .block; width:auto;
+          &:hover { text-decoration: underline; .c-3; }
+        }
+      }
+      &.on {
+        nav {
+          .logout {
+            &:after { .cnt; .abs; .rt(-26,39); .contain('../img/icon_arrow_up.png'); .wh(19,19); }
+            img { .-a(#5F4EEE;); .br(50%); .-box; }
+          }
+        }
+        .my-page { .block; }
+      }
+    }
+    .dim { .fix; .f; .lt; .bgc(#000); opacity: 0.4; .hide;
+      &.on { .block; }
+    }
+
+    article { .w(1280); .mh-c;
+      .top { .wh(100%,150); .contain; .no-repeat; .rel; .mb(30);
+        &.m4 { .bg('../img/img_product.png'); }
+        h2 { .fs(26); color:#fff; .bold; .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
+      }
+
+      aside { .fs(15); .c-3; .bold; .w(180); .tl; .mr(20); .ib; .vat;
+        p { .lh(26); .pb(10); .-b(#333); .mb(11); }
+        ul {
+          li { .mb(30); }
+        }
+      }
+      section { .w(1080); .ib; .vat;
+        .tit-wrap { .tl; .pb(10); .-b(#333); .mb(30);
+          h3 { .fs(18); .bold; .lh(26); .tl; .ib; .vam; }
+          .crumb { .fs(12); .c-9; .fr; .mt(5); }
+        }
+        .visual { .wh(1080,402); .bgc(#F6F7FA);
+          img { .wh(480,402); .ml(60); }
+        }
+      }
+    }
+  }
+}
