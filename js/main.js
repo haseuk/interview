@@ -38,4 +38,13 @@ window.onload = function() {
   function dimOff() {
     dim.classList.remove('on');
   }
+
+  let view = document.querySelector('.sec-inner2');
+  let tabs = document.querySelectorAll('.tabs a');
+  Array.prototype.forEach.call(tabs, function (e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-page');
+      view.setAttribute('data-view', idx);
+    })
+  })
 }
