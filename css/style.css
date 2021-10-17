@@ -33,7 +33,8 @@ img {
   line-height: 2.77777778rem;
   display: inline-block;
 }
-textarea {
+textarea,
+input {
   outline: none;
 }
 .container {
@@ -890,6 +891,7 @@ textarea {
   height: 1.94444444rem;
   line-height: 1.94444444rem;
   text-align: center;
+  box-sizing: border-box;
 }
 .container .wrap.interview1 article section .sec-inner .visual .calendar img {
   width: 1rem;
@@ -1016,19 +1018,19 @@ textarea {
   background-color: #999;
   border-radius: 50%;
 }
-.container .wrap.interview-none article section .sec-inner .table .cont-none {
+.container .wrap.none article section .sec-inner .table .cont-none {
   margin-top: 1.66666667rem;
 }
-.container .wrap.interview-none article section .sec-inner .table .cont-none img {
+.container .wrap.none article section .sec-inner .table .cont-none img {
   display: inline-block;
 }
-.container .wrap.interview-none article section .sec-inner .table .cont-none p {
+.container .wrap.none article section .sec-inner .table .cont-none p {
   font-size: 0.77777778rem;
   line-height: 1.05555556rem;
   color: #333;
   text-align: center;
 }
-.container .wrap.interview-none article section .sec-inner .btn {
+.container .wrap.none article section .sec-inner .btn.none-btn {
   font-size: 1.11111111rem;
   width: 16.66666667rem;
   height: 2.77777778rem;
@@ -1037,5 +1039,298 @@ textarea {
   margin-right: 0rem;
   margin-bottom: 9.44444444rem;
   margin-left: 0rem;
+}
+.container .wrap.manage article section .sec-inner .visual {
+  text-align: left;
+  position: relative;
+}
+.container .wrap.manage article section .sec-inner .visual .select {
+  position: relative;
+  display: inline-block;
+}
+.container .wrap.manage article section .sec-inner .visual .select:after {
+  content: '';
+  display: block;
+  width: 1.05555556rem;
+  height: 1.05555556rem;
+  background-repeat: no-repeat;
+  background-image: url('../img/icon_arrow_down.png');
+  background-size: contain;
+  position: absolute;
+  right: 0.55555556rem;
+  top: 0.5rem;
+  left: auto;
+  bottom: auto;
+  pointer-events: none;
+}
+.container .wrap.manage article section .sec-inner .visual .select.choice {
+  margin-bottom: 0.55555556rem;
+  width: 23.11111111rem;
+}
+.container .wrap.manage article section .sec-inner .visual .select p,
+.container .wrap.manage article section .sec-inner .visual .select a {
+  font-size: 0.77777778rem;
+  color: #333;
+  padding-left: 0.55555556rem;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  display: inline-block;
+  width: 100%;
+  height: 1.94444444rem;
+  line-height: 1.94444444rem;
+}
+.container .wrap.manage article section .sec-inner .visual .select .select-list {
+  width: 100%;
+  box-shadow: 2px 6px 16px #112A8014;
+  position: absolute;
+  left: 0rem;
+  top: 1.88888889rem;
+  right: auto;
+  bottom: auto;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 1;
+  display: none;
+}
+.container .wrap.manage article section .sec-inner .visual .select .select-list p,
+.container .wrap.manage article section .sec-inner .visual .select .select-list a {
+  border: 0;
+}
+.container .wrap.manage article section .sec-inner .visual .select .select-list a {
+  color: #666;
+}
+.container .wrap.manage article section .sec-inner .visual .select .select-list .input-box {
+  padding-top: 0rem;
+  padding-right: 0.55555556rem;
+  padding-bottom: 0rem;
+  padding-left: 0.55555556rem;
+  box-sizing: border-box;
+}
+.container .wrap.manage article section .sec-inner .visual .select .select-list .input-box label {
+  display: block;
+  height: 1.94444444rem;
+  line-height: 1.94444444rem;
+}
+.container .wrap.manage article section .sec-inner .visual .select .select-list .input-box label s {
+  font-size: 0.77777778rem;
+  line-height: 1.05555556rem;
+  color: #333;
+  text-align: left;
+  vertical-align: middle;
+}
+.container .wrap.manage article section .sec-inner .visual .select .select-list .input-box label input[type=checkbox] + i {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../img/checkbox_none.png');
+  background-size: contain;
+  float: right;
+  margin-top: 0.44444444rem;
+}
+.container .wrap.manage article section .sec-inner .visual .select .select-list .input-box label input[type=checkbox]:checked + i {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../img/checkbox.png');
+  background-size: contain;
+}
+.container .wrap.manage article section .sec-inner .visual .select .select-list .input-box label input {
+  display: none;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap {
+  margin-bottom: 0.55555556rem;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap > div {
+  margin-right: 0.55555556rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap .gender {
+  width: 4.55555556rem;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap .age {
+  width: 9.11111111rem;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap .job-group {
+  width: 8.88888889rem;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap .name-email {
+  width: 5.55555556rem;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap.v-wrap1 {
+  border: 1px solid #ddd;
+  padding-top: 0.55555556rem;
+  padding-right: 0.72222222rem;
+  padding-bottom: 0.55555556rem;
+  padding-left: 0.72222222rem;
+  box-sizing: border-box;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap.v-wrap1 .refresh {
+  font-size: 0.77777778rem;
+  width: 7.77777778rem;
+  height: 1.94444444rem;
+  line-height: 1.94444444rem;
+  position: relative;
+  vertical-align: middle;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap.v-wrap1 .refresh:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -1.05555556rem;
+  top: 0.38888889rem;
+  left: auto;
+  bottom: auto;
+  width: 0.05555556rem;
+  height: 1.11111111rem;
+  background-color: #5F4EEE;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap.v-wrap1 .refresh img {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap.v-wrap1 .select-value {
+  vertical-align: middle;
+  margin-left: 1.83333333rem;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap.v-wrap1 .select-value .value {
+  font-size: 0.77777778rem;
+  line-height: 1.05555556rem;
+  text-align: left;
+  color: #333;
+  padding-top: 0.44444444rem;
+  padding-right: 2.77777778rem;
+  padding-bottom: 0.44444444rem;
+  padding-left: 0.55555556rem;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #F7F6FF;
+  margin-right: 0.55555556rem;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap.v-wrap1 .select-value .value:after {
+  content: '';
+  display: block;
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  position: absolute;
+  right: 0.44444444rem;
+  top: 0.55555556rem;
+  left: auto;
+  bottom: auto;
+  background-repeat: no-repeat;
+  background-image: url('../img/btn_close.png');
+  background-size: contain;
+}
+.container .wrap.manage article section .sec-inner .visual .status {
+  margin-top: 0.55555556rem;
+  zoom: 1;
+}
+.container .wrap.manage article section .sec-inner .visual .status:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container .wrap.manage article section .sec-inner .visual .status .user-rate {
+  font-size: 0.77777778rem;
+  line-height: 1.27777778rem;
+  color: #666;
+  text-align: left;
+  display: inline-block;
+}
+.container .wrap.manage article section .sec-inner .visual .status .user-rate span {
+  font-size: 0.88888889rem;
+  color: #5F4EEE;
+  font-weight: 700;
+}
+.container .wrap.manage article section .sec-inner .visual .status .down-btn {
+  font-size: 0.77777778rem;
+  color: #5F4EEE;
+  width: 8.33333333rem;
+  height: 1.94444444rem;
+  line-height: 1.94444444rem;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #5F4EEE;
+  box-sizing: border-box;
+  float: right;
+}
+.container .wrap.manage article section .sec-inner .visual .status .down-btn img {
+  width: 1.11111111rem;
+  height: 1.11111111rem;
+  display: inline-block;
+  margin-top: -0.22222222rem;
+}
+.container .wrap.manage article section .sec-inner .visual .search {
+  margin-right: 0rem !important;
+}
+.container .wrap.manage article section .sec-inner .visual .search input {
+  border: 1px solid #ddd;
+  width: 16.27777778rem;
+  height: 1.94444444rem;
+  box-sizing: border-box;
+  padding-left: 0.55555556rem;
+  vertical-align: middle;
+}
+.container .wrap.manage article section .sec-inner .visual .search .btn {
+  font-size: 0.77777778rem;
+  width: 4.44444444rem;
+  height: 1.94444444rem;
+  line-height: 1.94444444rem;
+  vertical-align: middle;
+}
+.container .wrap.manage article section .sec-inner .visual .id-sort {
+  position: absolute;
+  right: 0rem;
+  top: 0.88888889rem;
+  left: auto;
+  bottom: auto;
+  margin-right: 0rem !important;
+}
+.container .wrap.manage article section .sec-inner .visual .id-sort label input[type=checkbox] + i {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../img/checkbox_gray_line.png');
+  background-size: contain;
+  margin-right: 0.27777778rem;
+  vertical-align: middle;
+}
+.container .wrap.manage article section .sec-inner .visual .id-sort label input[type=checkbox]:checked + i {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../img/checkbox.png');
+  background-size: contain;
+  margin-right: 0.27777778rem;
+}
+.container .wrap.manage article section .sec-inner .visual .id-sort label input {
+  display: none;
+}
+.container .wrap.manage article section .sec-inner .visual .id-sort label s {
+  font-size: 0.77777778rem;
+  line-height: 1.05555556rem;
+  color: #333;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0.16666667rem;
+}
+.container .wrap.manage article section .sec-inner .visual .choice.on .select-list,
+.container .wrap.manage article section .sec-inner .visual .gender.on .select-list,
+.container .wrap.manage article section .sec-inner .visual .age.on .select-list,
+.container .wrap.manage article section .sec-inner .visual .job-group.on .select-list,
+.container .wrap.manage article section .sec-inner .visual .name-email.on .select-list {
+  display: inline-block;
+}
+.container .wrap.detail article section .sec-inner .visual .status .down-btn {
+  margin-top: -2.5rem;
 }
 /*# sourceMappingURL=style.css.map */
