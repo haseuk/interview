@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_24812" data-name="사각형 24812" class="cls-1" d="M0 0h14v14H0z"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="bx-chevron-down" class="cls-2" d="M6.723 4.787 3.837 1.9.951 4.787 0 3.837 3.837 0l3.836 3.837z"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#333}.cls-2{fill:none}
+        </style>
+    </defs>
+    <g id="btn_next_01" transform="rotate(90 7 7)" style="clip-path:url(#clip-path)">
+        <g id="Arrow" transform="translate(3.163 4.606)">
+            <path id="bx-chevron-down-2" data-name="bx-chevron-down" class="cls-2" d="M6.723 4.787 3.837 1.9.951 4.787 0 3.837 3.837 0l3.836 3.837z"/>
+            <g id="Arrow-2" data-name="Arrow" style="clip-path:url(#clip-path-2)">
+                <path id="_color" data-name="🎨 color" class="cls-1" d="M0 19.72h19.72V0H0z" transform="translate(-6.023 -6.893)"/>
+            </g>
+        </g>
+    </g>
+</svg>

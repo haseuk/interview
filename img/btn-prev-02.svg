@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_24811" data-name="사각형 24811" transform="rotate(90 21.5 929.5)" style="fill:#bcbcbc" d="M0 0h14v14H0z"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="bx-chevron-down" class="cls-2" d="M6.723 0 3.837 2.886.951 0 0 .951l3.837 3.836L7.673.951z"/>
+        </clipPath>
+        <style>
+            .cls-2{fill:none}.cls-4{clip-path:url(#clip-path-2)}.cls-5{fill:#333}
+        </style>
+    </defs>
+    <g id="btn_prev_02" transform="translate(-937 -908)" style="clip-path:url(#clip-path)">
+        <g id="그룹_18696" data-name="그룹 18696" transform="translate(.394)">
+            <g id="Arrow" transform="rotate(90 16.115 927.279)">
+                <path id="bx-chevron-down-3" data-name="bx-chevron-down" class="cls-2" d="M6.723 0 3.837 2.886.951 0 0 .951l3.837 3.836L7.673.951z"/>
+                <g id="Arrow-2" data-name="Arrow" class="cls-4">
+                    <path id="_color" data-name="🎨 color" class="cls-5" d="M0 0h19.72v19.72H0z" transform="translate(-6.023 -8.04)"/>
+                </g>
+            </g>
+            <g id="Arrow-3" data-name="Arrow" transform="rotate(90 18.509 929.672)">
+                <path id="bx-chevron-down-4" data-name="bx-chevron-down" class="cls-2" d="M6.723 0 3.837 2.886.951 0 0 .951l3.837 3.836L7.673.951z"/>
+                <g id="Arrow-4" data-name="Arrow" class="cls-4">
+                    <path id="_color-2" data-name="🎨 color" class="cls-5" d="M0 0h19.72v19.72H0z" transform="translate(-6.023 -8.04)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

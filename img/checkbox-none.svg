@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <g style="fill:#fff;stroke:#ccc">
+        <path style="stroke:none" d="M0 0h16v16H0z"/>
+        <path style="fill:none" d="M.5.5h15v15H.5z"/>
+    </g>
+</svg>

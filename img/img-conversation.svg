@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_25613" data-name="사각형 25613" class="cls-1" transform="translate(0 .061)" d="M0 0h55v55H0z"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="img_conversation" transform="translate(0 -.061)" style="clip-path:url(#clip-path)">
+        <g id="conversation" transform="translate(1.148 1.148)">
+            <path id="패스_8695" data-name="패스 8695" d="M23.616 0H11.079A11.161 11.161 0 0 0 .005 11.074a11.072 11.072 0 0 0 11.074 10.97h12.537a11.263 11.263 0 0 0 2.225-.251l2.946 2.915a1.5 1.5 0 0 0 1.692.345 1.563 1.563 0 0 0 .972-1.442V18.69a10.961 10.961 0 0 0 3.134-7.616A11.072 11.072 0 0 0 23.616 0z" transform="translate(-.005)" style="fill:#ffd513"/>
+            <path id="패스_8696" data-name="패스 8696" d="M183.243 11.074a10.961 10.961 0 0 1-3.134 7.616v4.921a1.563 1.563 0 0 1-.972 1.442 1.5 1.5 0 0 1-1.692-.345l-2.945-2.915a11.262 11.262 0 0 1-2.225.251H166V0h6.268a11.072 11.072 0 0 1 10.975 11.074z" transform="translate(-148.662)" style="fill:#ffbc04"/>
+            <circle id="타원_561" data-name="타원 561" class="cls-1" cx="1.621" cy="1.621" transform="translate(9.97 9.97)" r="1.621"/>
+            <circle id="타원_567" data-name="타원 567" class="cls-1" cx="1.621" cy="1.621" transform="translate(15.403 9.97)" r="1.621"/>
+            <circle id="타원_568" data-name="타원 568" class="cls-1" cx="1.621" cy="1.621" transform="translate(20.837 9.97)" r="1.621"/>
+            <path id="패스_8697" data-name="패스 8697" d="M204.512 271h-12.537A10.982 10.982 0 0 0 181 281.97a11.209 11.209 0 0 0 3.134 7.721v4.921a1.563 1.563 0 0 0 .972 1.442 1.5 1.5 0 0 0 1.692-.345l2.946-2.915a11.263 11.263 0 0 0 2.225.251h12.537a11.022 11.022 0 1 0 0-22.044z" transform="translate(-162.761 -243.354)" style="fill:#ff7183"/>
+            <path id="패스_8698" data-name="패스 8698" d="M363.348 281.97a11.161 11.161 0 0 1-11.074 11.074h-6.268V271h6.268a11.072 11.072 0 0 1 11.074 10.97z" transform="translate(-310.523 -243.354)" style="fill:#ff3751"/>
+            <circle id="타원_569" data-name="타원 569" class="cls-1" cx="1.621" cy="1.621" transform="translate(28.48 37.046)" r="1.621"/>
+            <circle id="타원_570" data-name="타원 570" class="cls-1" cx="1.621" cy="1.621" transform="translate(33.913 37.046)" r="1.621"/>
+            <circle id="타원_571" data-name="타원 571" class="cls-1" cx="1.621" cy="1.621" transform="translate(39.347 37.046)" r="1.621"/>
+        </g>
+    </g>
+</svg>

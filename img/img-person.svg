@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+    <defs>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="img_person" transform="translate(-1492 -30)">
+        <circle id="타원_544" data-name="타원 544" cx="20" cy="20" r="20" transform="translate(1492 30)" style="fill:#ebebeb"/>
+        <g id="person" transform="translate(1500 38)">
+            <g id="person-2" data-name="person">
+                <path id="패스_8273" data-name="패스 8273" class="cls-3" d="M12 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4z"/>
+                <path id="패스_8274" data-name="패스 8274" class="cls-3" d="M18 21a1 1 0 0 0 1-1 7 7 0 1 0-14 0 1 1 0 0 0 1 1z"/>
+            </g>
+        </g>
+    </g>
+</svg>

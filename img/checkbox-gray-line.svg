@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <g data-name="사각형 25052" style="stroke:#ccc;fill:#fff">
+        <path style="stroke:none" d="M0 0h16v16H0z"/>
+        <path style="fill:none" d="M.5.5h15v15H.5z"/>
+    </g>
+    <g data-name="Layer 2">
+        <path data-name="패스 8194" d="M7.418 12.982a.583.583 0 0 1-.426-.187L4.157 9.779a.584.584 0 1 1 .852-.8l2.4 2.561 4.906-5.367a.583.583 0 1 1 .863.782L7.85 12.789a.583.583 0 0 1-.426.193z" transform="translate(-.666 -1.482)" style="fill:#ccc"/>
+    </g>
+</svg>
