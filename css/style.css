@@ -33,6 +33,10 @@ img {
   line-height: 2.77777778rem;
   display: inline-block;
 }
+.btn.gray {
+  color: #666;
+  background-color: #ebebeb;
+}
 textarea,
 input {
   outline: none;
@@ -47,6 +51,37 @@ input {
 .container .wrap {
   font-size: 0rem;
   overflow: hidden;
+}
+.container .wrap .top-banner {
+  background: url("../img/img-topbanner-biz.png") no-repeat center top;
+  height: 3.33333333rem;
+  position: relative;
+  z-index: 20;
+  display: none;
+}
+.container .wrap .top-banner .inner {
+  width: 71.11111111rem;
+  height: 3.33333333rem;
+  line-height: 3.33333333rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: right;
+}
+.container .wrap .top-banner .inner p {
+  font-size: 0.88888889rem;
+  line-height: 1.27777778rem;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.72222222rem;
+}
+.container .wrap .top-banner .inner .t-ban-close {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap .top-banner.on {
+  display: block;
 }
 .container .wrap header {
   width: 100%;
@@ -95,7 +130,10 @@ input {
   display: none;
 }
 .container .wrap header nav a.logout {
-  margin-left: 7.72222222rem;
+  margin-top: 0rem;
+  margin-right: 1.44444444rem;
+  margin-bottom: 0rem;
+  margin-left: 6.27777778rem;
   font-weight: 400;
   position: relative;
 }
@@ -114,7 +152,7 @@ input {
   left: auto;
   bottom: auto;
   background-repeat: no-repeat;
-  background-image: url('../img/icon_arrow_down.png');
+  background-image: url('../img/icon_arrow_down.svg');
   background-size: contain;
   width: 1.05555556rem;
   height: 1.05555556rem;
@@ -214,7 +252,7 @@ input {
   left: auto;
   bottom: auto;
   background-repeat: no-repeat;
-  background-image: url('../img/icon_arrow_up.png');
+  background-image: url('../img/icon_arrow_up_violet.svg');
   background-size: contain;
   width: 1.05555556rem;
   height: 1.05555556rem;
@@ -1101,6 +1139,255 @@ input {
   background-color: #999;
   border-radius: 50%;
 }
+.container .wrap.interview article section .sec-inner.registry .visual {
+  margin-bottom: 4.27777778rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 1.66666667rem;
+  margin-left: 0rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table h4 {
+  font-size: 0.88888889rem;
+  line-height: 1.27777778rem;
+  color: #333;
+  position: relative;
+  padding-left: 0.72222222rem;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table h4:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0rem;
+  top: 0.16666667rem;
+  right: auto;
+  bottom: auto;
+  width: 0.16666667rem;
+  height: 0.94444444rem;
+  background-color: #333;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table {
+  table-layout: fixed;
+  margin-top: 0.55555556rem;
+  border-bottom: 1px solid #ddd;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr th,
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td {
+  border-top: 1px solid #ddd;
+  border-bottom: 0;
+  box-sizing: border-box;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr th {
+  font-size: 0.88888889rem;
+  line-height: 1.77777778rem;
+  color: #333;
+  background-color: #fafafa;
+  padding-top: 1rem;
+  padding-right: 1.88888889rem;
+  padding-bottom: 1rem;
+  padding-left: 1.88888889rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr th s {
+  color: #ef3454;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td {
+  font-size: 0rem;
+  padding-top: 0.5rem;
+  padding-right: 0.55555556rem;
+  padding-bottom: 0.44444444rem;
+  padding-left: 0.55555556rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td input,
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td .select {
+  font-size: 0.77777778rem;
+  height: 2.22222222rem;
+  line-height: 2.22222222rem;
+  vertical-align: middle;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td input {
+  width: 26.22222222rem;
+  border: 1px solid #ddd;
+  padding-left: 0.55555556rem;
+  box-sizing: border-box;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td span {
+  font-size: 0.66666667rem;
+  line-height: 0.94444444rem;
+  text-align: left;
+  color: #999;
+  margin-top: 0.27777778rem;
+  display: block;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td .select {
+  width: 12.83333333rem;
+  margin-right: 0.55555556rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td .select a {
+  width: 100%;
+  height: 100%;
+  line-height: 2.22222222rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td .select:after {
+  top: 0.61111111rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email input {
+  width: 8.05555556rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email input + s {
+  font-size: 0.77777778rem;
+  color: #333;
+  line-height: 2.22222222rem;
+  width: 1.83333333rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email input + s + input {
+  margin-right: 0.5rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email .mail-ex {
+  width: 7.77777778rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .calendar {
+  width: 11.66666667rem;
+  height: 2.22222222rem;
+  line-height: 2.22222222rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio input[type=radio] + i {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  background-repeat: no-repeat;
+  background-image: url('../img/btn-radio-none-checked.svg');
+  background-size: contain;
+  display: inline-block;
+  margin-right: 0.22222222rem;
+  vertical-align: middle;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio input[type=radio]:checked + i {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  background-repeat: no-repeat;
+  background-image: url('../img/btn-radio.svg');
+  background-size: contain;
+  display: inline-block;
+  margin-right: 0.22222222rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio input {
+  display: none;
+  height: 0.88888889rem;
+  line-height: 0.88888889rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio s {
+  font-size: 0.77777778rem;
+  line-height: 1.05555556rem;
+  color: #333;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5.05555556rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio span {
+  margin-top: -0.44444444rem;
+  text-indent: -0.77777778rem;
+  margin-left: 0.77777778rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 {
+  margin-bottom: 0rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 .pr-txt {
+  background-color: #fafafa;
+  padding-top: 0.55555556rem;
+  padding-right: 0rem;
+  padding-bottom: 0.55555556rem;
+  padding-left: 1.88888889rem;
+  box-sizing: border-box;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 .pr-txt p {
+  font-size: 0.88888889rem;
+  line-height: 1.55555556rem;
+  color: #333;
+  text-align: left;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 .pr-txt span {
+  font-size: 0.66666667rem;
+  line-height: 0.94444444rem;
+  color: #999;
+  text-align: left;
+  margin-top: 0.27777778rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 table {
+  margin-top: 0rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 table tr td {
+  padding: 0.55555556rem;
+  padding-top: 0rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 table tr td input[type=checkbox] + i {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../img/checkbox-none.svg');
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 0.27777778rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 table tr td input[type=checkbox]:checked + i {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../img/checkbox.svg');
+  background-size: contain;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 table tr td s {
+  font-size: 0.77777778rem;
+  line-height: 1.05555556rem;
+  color: #333;
+  vertical-align: middle;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 table tr td input {
+  display: none;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 table tr td input[type=text] {
+  font-size: 0.77777778rem;
+  line-height: 1.05555556rem;
+  color: #333;
+  text-align: left;
+  padding-left: 0.55555556rem;
+  box-sizing: border-box;
+  width: 26.22222222rem;
+  height: 2.22222222rem;
+  line-height: 2.22222222rem;
+  border: 1px solid #ddd;
+  display: block;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 table tr td .txt {
+  font-size: 0.77777778rem;
+  line-height: 1.05555556rem;
+  color: #333;
+  text-align: left;
+  margin-top: 0.27777778rem;
+}
+.container .wrap.interview article section .sec-inner.registry .error {
+  font-size: 0.83333333rem;
+  line-height: 1.22222222rem;
+  text-align: center;
+  color: #eb3838;
+  margin-bottom: 1.66666667rem;
+}
+.container .wrap.interview article section .sec-inner.registry .btns .btn {
+  font-size: 1.11111111rem;
+  width: 11.11111111rem;
+  height: 2.77777778rem;
+  line-height: 2.77777778rem;
+  margin-top: 0rem;
+  margin-right: 0.94444444rem;
+  margin-bottom: 0rem;
+  margin-left: 0.94444444rem;
+}
 .container .wrap.none article section .sec-inner .table .cont-none {
   margin-top: 1.66666667rem;
 }
@@ -1137,7 +1424,7 @@ input {
   width: 1.05555556rem;
   height: 1.05555556rem;
   background-repeat: no-repeat;
-  background-image: url('../img/icon-arrow-down.svg');
+  background-image: url('../img/icon_arrow_down.svg');
   background-size: contain;
   position: absolute;
   right: 0.55555556rem;
@@ -1237,10 +1524,12 @@ input {
 .container .wrap.manage article section .sec-inner .visual .v-wrap .age {
   width: 9.11111111rem;
 }
-.container .wrap.manage article section .sec-inner .visual .v-wrap .job-group {
+.container .wrap.manage article section .sec-inner .visual .v-wrap .job-group,
+.container .wrap.manage article section .sec-inner .visual .v-wrap .job-duty {
   width: 8.88888889rem;
 }
-.container .wrap.manage article section .sec-inner .visual .v-wrap .name-email {
+.container .wrap.manage article section .sec-inner .visual .v-wrap .name-email,
+.container .wrap.manage article section .sec-inner .visual .v-wrap .mail-ex {
   width: 5.55555556rem;
 }
 .container .wrap.manage article section .sec-inner .visual .v-wrap.v-wrap1 {
@@ -1368,6 +1657,8 @@ input {
 .container .wrap.manage article section .sec-inner .visual .gender.on .select-list,
 .container .wrap.manage article section .sec-inner .visual .age.on .select-list,
 .container .wrap.manage article section .sec-inner .visual .job-group.on .select-list,
+.container .wrap.manage article section .sec-inner .visual .job-duty.on .select-list,
+.container .wrap.manage article section .sec-inner .visual .mail-ex.on .select-list,
 .container .wrap.manage article section .sec-inner .visual .name-email.on .select-list {
   display: inline-block;
 }

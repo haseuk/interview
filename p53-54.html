@@ -10,7 +10,16 @@
 </head>
 <body>
   <div class="container">
-    <div class="wrap interview">
+    <div class="wrap interview manage">
+
+      <!--top banner-->
+      <div class="top-banner on">
+        <div class="inner">
+          <p>다시 보지 않기</p>
+          <a class="t-ban-close"><img src="img/btn-close-wh.svg" alt=""></a>
+        </div>
+      </div>
+      <!--top banner 끝-->
 
       <!-- 네비게이션 -->
       <header>
@@ -127,130 +136,288 @@
                 <p class="user-rate">면접 가능 인원수(남은 이용수량) : <span>N</span>건</p>
               </div>
             </div>
+          </div>
 
-            <div class="table">
-              <table cellspacing="0" cellpadding="0" border="0">
-                <colgroup>
-                  <col width="80px">
-                  <col width="290px">
-                  <col width="260px">
-                  <col width="150px">
-                  <col width="150px">
-                  <col width="150px">
-                </colgroup>
-                <tr>
-                  <th>NO.</th>
-                  <th>계약명</th>
-                  <th>계약기간</th>
-                  <th>이용자수</th>
-                  <th>쿠폰번호</th>
-                  <th>계약상태</th>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>상품명(쿠폰명으로 배치)</td>
-                  <td>2021.01.01~2022.01.01</td>
-                  <td>00 / 00</td>
-                  <td>123456</td>
-                  <td class="able">유효</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>상품명(쿠폰명으로 배치)</td>
-                  <td>2021.01.01~2022.01.01</td>
-                  <td>00 / 00</td>
-                  <td>123456</td>
-                  <td class="end">종료</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>상품명(쿠폰명으로 배치)</td>
-                  <td>2021.01.01~2022.01.01</td>
-                  <td>00 / 00</td>
-                  <td>123456</td>
-                  <td class="end">종료</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>상품명(쿠폰명으로 배치)</td>
-                  <td>2021.01.01~2022.01.01</td>
-                  <td>00 / 00</td>
-                  <td>123456</td>
-                  <td class="able">유효</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>상품명(쿠폰명으로 배치)</td>
-                  <td>2021.01.01~2022.01.01</td>
-                  <td>00 / 00</td>
-                  <td>123456</td>
-                  <td class="able">유효</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>상품명(쿠폰명으로 배치)</td>
-                  <td>2021.01.01~2022.01.01</td>
-                  <td>00 / 00</td>
-                  <td>123456</td>
-                  <td class="end">종료</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>상품명(쿠폰명으로 배치)</td>
-                  <td>2021.01.01~2022.01.01</td>
-                  <td>00 / 00</td>
-                  <td>123456</td>
-                  <td class="end">종료</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>상품명(쿠폰명으로 배치)</td>
-                  <td>2021.01.01~2022.01.01</td>
-                  <td>00 / 00</td>
-                  <td>123456</td>
-                  <td class="able">유효</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>상품명(쿠폰명으로 배치)</td>
-                  <td>2021.01.01~2022.01.01</td>
-                  <td>00 / 00</td>
-                  <td>123456</td>
-                  <td class="able">유효</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>상품명(쿠폰명으로 배치)</td>
-                  <td>2021.01.01~2022.01.01</td>
-                  <td>00 / 00</td>
-                  <td>123456</td>
-                  <td class="end">종료</td>
-                </tr>
-              </table>
-              <div class="page-nation">
-                <ul>
-                  <li><a class="prev-dir"></a></li>
-                  <li><a class="prev"></a></li>
-                  <li class="active"><a>1</a></li>
-                  <li><a>2</a></li>
-                  <li><a>3</a></li>
-                  <li><a>4</a></li>
-                  <li><a>5</a></li>
-                  <li><a>6</a></li>
-                  <li><a>7</a></li>
-                  <li><a>8</a></li>
-                  <li><a>9</a></li>
-                  <li><a>10</a></li>
-                  <li><a class="next"></a></li>
-                  <li><a class="next-dir"></a></li>
-                </ul>
+          <div class="sec-inner registry">
+            <div class="visual">
+              <div class="v-wrap">
+                <div class="table">
+                  <h4>기본정보</h4>
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <colgroup>
+                      <col width="186px">
+                      <col width="354px">
+                      <col width="186px">
+                      <col width="354px">
+                    </colgroup>
+                    <tr>
+                      <th><s>*</s>기업이름</th>
+                      <td colspan="3">
+                        <input type="text" placeholder="(주)무한상사">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>채용공고</th>
+                      <td colspan="3">
+                        <input type="text" placeholder="Ex)2021년 상반기 영업/서비스직 공개채용, 한국전력공사 신입사원채용" maxlength="45">
+                        <span>※ 45자 이하로 작성해주세요.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>직군/직무</th>
+                      <td colspan="3">
+                        <div class="select job-group">
+                          <a onclick="selList('job-group')">직군</a>
+                          <div class="select-list">
+                            <div class="input-box">
+                              <label>
+                                <s>경영/회계</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>사무/기획</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>공무원</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>보건/의료/복지</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>영업판매</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>마케팅</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>디자인</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>섬유/의류</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>서비스</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>엔지니어</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>물류/재고/유통</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="select job-duty">
+                          <a onclick="selList('job-duty')">직무</a>
+                          <div class="select-list">
+                            <div class="input-box">
+                              <label>
+                                <s>경영/회계</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>사무/기획</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>공무원</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>보건/의료/복지</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>영업판매</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>마케팅</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>디자인</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>섬유/의류</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>서비스</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>엔지니어</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>물류/재고/유통</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <span>※ 원하는 직군/직무가 없는 경우, 가장 비슷한 직군/직무를 선택해주세요.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>담당자 이름</th>
+                      <td colspan="3">
+                        <input type="text" placeholder="한글 2~5자 / 영문2~20자 이내">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>담당자 이메일</th>
+                      <td colspan="3" class="td-email">
+                        <input type="text">
+                        <s>@</s>
+                        <input type="text">
+                        <div class="select mail-ex">
+                          <a onclick="selList('mail-ex')">직접입력</a>
+                          <div class="select-list">
+                            <div class="input-box">
+                              <label>
+                                <s>네이버</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>다음</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>지메일</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>담당자 연락처</th>
+                      <td colspan="3">
+                        <input type="text" placeholder="숫자만 입력">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>공고 시작일시</th>
+                      <td class="td-calendar">
+                        <div class="calendar">2021-07-07 오후 05:55 <img src="img/icon_calendar_bk.png" alt=""></div>
+                      </td>
+                      <th><s>*</s>공고 종료일시</th>
+                      <td class="td-calendar">
+                        <div class="calendar">2021-07-07 오후 05:55 <img src="img/icon_calendar_bk.png" alt=""></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>추가기회 제공</th>
+                      <td colspan="3" class="td-radio">
+                        <label>
+                          <input type="radio" name="chance">
+                          <i></i>
+                          <s>제공</s>
+                        </label>
+                        <label>
+                          <input type="radio" name="chance">
+                          <i></i>
+                          <s>미제공</s>
+                        </label>
+                        <span>※ 만약 면접 진행 중  7초 이상  화면에서 이탈, 목소리가 분석불가, 기기오류로 인한 목소리 미 반영 등으로 인해<br> 면접결과분석이 어려울 시에 대한 추가적인 기회(3회) 제공유무를 결정합니다.</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="table table2">
+                  <h4>질문정보</h4>
+                  <div class="pr-txt">
+                    <p>AI 면접은 지원자에게 총 3개의 질문을 제시합니다.<br> 관리자는 각각 3개의 면접 질문을 개별로 생성할 수도 있으며, AI 질문을 사용하시려면 체크박스에 체크를 해주세요.</p>
+                    <span>※ 원하는 직군/직무가 없는 경우, 가장 비슷한 직군/직무를 선택해주세요.</span>
+                  </div>
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <colgroup>
+                      <col width="186px">
+                      <col width="894px">
+                    </colgroup>
+                    <tr>
+                      <th><s>*</s>면접질문1</th>
+                      <td>
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          <s>1번 면접 질문은 자동 생성된 질문을 이용하겠습니다.</s>
+                        </label>
+                        <input type="text" placeholder="공백포함 80자 이내로 작성해 주시기 바랍니다.(영문 공백포함 160자)">
+                        <p class="txt">ex) 업무특성상 수많은 커뮤니케이션이 필요합니다. 본인만의 커뮤니케이션 비결은 무엇인가요?</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>면접질문2</th>
+                      <td>
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          <s>1번 면접 질문은 자동 생성된 질문을 이용하겠습니다.</s>
+                        </label>
+                        <input type="text" placeholder="공백포함 80자 이내로 작성해 주시기 바랍니다.(영문 공백포함 160자)">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>면접질문3</th>
+                      <td>
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          <s>1번 면접 질문은 자동 생성된 질문을 이용하겠습니다.</s>
+                        </label>
+                        <input type="text" placeholder="공백포함 80자 이내로 작성해 주시기 바랍니다.(영문 공백포함 160자)">
+                      </td>
+                    </tr>
+                  </table>
+                </div>
               </div>
             </div>
-
-            <div class="notice">
-              <p class="tit">유의사항 꼭 확인하세요.</p>
-              <p class="txt">계약기간 내에 이용이 가능하며, 기간 만료 후에는 이용이 종료됩니다.</p>
-              <p class="txt">계약내역예 대한 결제정보는 ‘기업 IM > 계약*결제내역’ 에서 확인 가능합니다.</p>
+            <p class="error">미입력한 필수입력 항목이 있습니다.</p>
+            <div class="btns">
+              <a class="btn">등록</a>
+              <a class="btn gray">취소</a>
+              <a class="btn">수정등록</a>
             </div>
           </div>
         </section>
@@ -259,4 +426,10 @@
   </div>
 </body>
 <script src="js/main.js"></script>
+<script>
+  function selList(v) {
+    let child = document.querySelector(`.${v}`);
+    child.classList.toggle('on');
+  }
+</script>
 </html>
