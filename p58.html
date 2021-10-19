@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Interview Master</title>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap interview manage">
+
+      <!-- 네비게이션 -->
+      <header>
+        <h1><a href="/"><img src="img/img-im-logo.svg" alt=""></a></h1>
+        <nav>
+          <a href="" class="m-list">IM기업홈</a>
+          <a href="" class="m-list">면접관리</a>
+          <a href="" class="m-list">통계분석</a>
+          <a href="" class="m-list">기업상품안내</a>
+          <div class="log-box">
+            <a class="login">로그인</a>
+            <a class="logout"><img src="img/img-person.svg" alt="">(주)무한상사IM</a>
+          </div>
+        </nav>
+        <div class="nav-list">
+          <ul>
+            <li>
+              <p>AI 모의면접</p>
+              <a href="">계약리스트</a>
+              <a href="">지원자관리</a>
+              <p>AI 기업면접</p>
+              <a href="">공고등록</a>
+              <a href="">공고리스트</a>
+              <a href="">지원자관리</a>
+              <p>AI 화상면접 <s>N</s></p>
+              <a href="">공고등록</a>
+              <a href="">공고리스트</a>
+              <a href="">지원자관리</a>
+            </li>
+            <li>
+              <p>AI 모의면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+              <p>AI 기업면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+              <p>AI 화상면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+            </li>
+            <li>
+              <p><a href="">전체서비스안내</a></p>
+              <p><a href="">서비스신청</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="my-page">
+          <a href="">기업정보관리</a>
+          <a href="">이용내역</a>
+          <a href="">공지사항</a>
+          <a href="">고객지원</a>
+          <a href="">로그아웃</a>
+        </div>
+      </header>
+      <div class="dim"></div>
+      <!-- 끝 -->
+
+      <article>
+        <div class="top biz">
+          <h2>BIZ (AI 기업면접)</h2>
+          <p class="txt">기업에서 채용담당자가 AI면접을 통해 인재를 채용할 수 있도록 서비스합니다.<br> 면접 후 <s>지원자의 성향과 적합직군등을 분석한 AI분석 결과 레포트</s>를 확인 할 수 있습니다.</p>
+        </div>
+
+        <!-- 사이드 메뉴 -->
+        <aside>
+          <p>면접관리</p>
+          <ul>
+            <li>
+              <a href="">AI 모의면접</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="">계약리스트</a></li>
+                  <li><a href="">지원자관리</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">AI 기업면접</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="">공고등록</a></li>
+                  <li><a href="">공고리스트</a></li>
+                  <li class="on"><a href="">지원자관리</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">AI 화상면접</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="">공고등록</a></li>
+                  <li><a href="">공고리스트</a></li>
+                  <li><a href="">지원자관리</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <img src="img/img_sidebanner1.png" alt="">
+        </aside>
+        <!-- 끝 -->
+
+        <section>
+          <div class="sec-inner">
+            <div class="tit-wrap">
+              <h3>지원자관리</h3>
+              <div class="crumb">
+                <span>홈 &nbsp; ></span>
+                <span>면접관리 &nbsp; ></span>
+                <span>BIZ 지원자관리</span>
+              </div>
+            </div>
+            <div class="visual">
+              <div class="select choice">
+                <a onclick="selList('choice')">계약건을 선택해주세요.</a>
+                <div class="select-list">
+                  <p>전체</p>
+                  <a>이메일</a>
+                  <a>이름</a>
+                  <a>종합점수</a>
+                </div>
+              </div>
+              <div class="v-wrap">
+                <div class="calendar">시작일 / 종료일 <img src="img/icon_calendar_bk.png" alt=""></div>
+                <div class="select gender">
+                  <a onclick="selList('gender')">성별</a>
+                  <div class="select-list">
+                    <a>남성</a>
+                    <a>여성</a>
+                  </div>
+                </div>
+                <div class="select age">
+                  <a onclick="selList('age')">연령</a>
+                  <div class="select-list">
+                    <div class="input-box">
+                      <label>
+                        <s>19세 이하</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>20~25세</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>26~30세</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>31~35세</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>36~40세</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>45~50세</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>50세 이상</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="select job-group">
+                  <a onclick="selList('job-group')">직군</a>
+                  <div class="select-list">
+                    <div class="input-box">
+                      <label>
+                        <s>경영/회계</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>사무/기획</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>공무원</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>보건/의료/복지</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>영업판매</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>마케팅</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>디자인</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>섬유/의류</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>서비스</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>엔지니어</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                      <label>
+                        <s>물류/재고/유통</s>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="select name-email">
+                  <a onclick="selList('name-email')">전체</a>
+                  <div class="select-list">
+                    <a>이메일</a>
+                    <a>이름</a>
+                  </div>
+                </div>
+                <div class="search">
+                  <input type="text">
+                  <a class="btn">검색</a>
+                </div>
+              </div>
+              <div class="v-wrap v-wrap1">
+                <a class="btn refresh">초기화 <img src="img/icon-refresh.svg" alt=""></a>
+                <div class="select-value">
+                  <a class="value">남성</a>
+                  <a class="value">45~50세</a>
+                  <a class="value">물류/재고/유통</a>
+                </div>
+              </div>
+              <div class="status">
+                <div class="btn-wrap">
+                  <a class="app-user"><img src="img/icon-star.png" alt=""> 선별지원자</a>
+                  <a class="v-inter">화상면접 예정</a>
+                  <a class="down-btn">엑셀 다운 <img src="img/icon-download-pur.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="table biz-ta">
+              <table cellspacing="0" cellpadding="0" border="0">
+                <colgroup>
+                  <col width="50px">
+                  <col width="155px">
+                  <col width="260px">
+                  <col width="160px">
+                  <col width="100px">
+                  <col width="60px">
+                  <col width="70px">
+                  <col width="130px">
+                  <col width="95px">
+                </colgroup>
+                <tr>
+                  <th>순위</th>
+                  <th></th>
+                  <th>채용공고</th>
+                  <th>이메일</th>
+                  <th>이름</th>
+                  <th>나이<br>(성별)</th>
+                  <th>종합등급</th>
+                  <th>응시일시</th>
+                  <th>화상면접<br>등록</th>
+                </tr>
+              </table>
+
+              <div class="cont-none">
+                <img src="img/img_no_content.png" alt="">
+                <p>내역이 확인되지 않습니다.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </div>
+</body>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js"></script>
+<script>
+  function selList(v) {
+    let child = document.querySelector(`.${v}`);
+    child.classList.toggle('on');
+  }
+</script>
+</html>

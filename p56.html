@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Interview Master</title>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap interview manage">
+
+      <!-- 네비게이션 -->
+      <header>
+        <h1><a href="/"><img src="img/img-im-logo.svg" alt=""></a></h1>
+        <nav>
+          <a href="" class="m-list">IM기업홈</a>
+          <a href="" class="m-list">면접관리</a>
+          <a href="" class="m-list">통계분석</a>
+          <a href="" class="m-list">기업상품안내</a>
+          <div class="log-box">
+            <a class="login">로그인</a>
+            <a class="logout"><img src="img/img-person.svg" alt="">(주)무한상사IM</a>
+          </div>
+        </nav>
+        <div class="nav-list">
+          <ul>
+            <li>
+              <p>AI 모의면접</p>
+              <a href="">계약리스트</a>
+              <a href="">지원자관리</a>
+              <p>AI 기업면접</p>
+              <a href="">공고등록</a>
+              <a href="">공고리스트</a>
+              <a href="">지원자관리</a>
+              <p>AI 화상면접 <s>N</s></p>
+              <a href="">공고등록</a>
+              <a href="">공고리스트</a>
+              <a href="">지원자관리</a>
+            </li>
+            <li>
+              <p>AI 모의면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+              <p>AI 기업면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+              <p>AI 화상면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+            </li>
+            <li>
+              <p><a href="">전체서비스안내</a></p>
+              <p><a href="">서비스신청</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="my-page">
+          <a href="">기업정보관리</a>
+          <a href="">이용내역</a>
+          <a href="">공지사항</a>
+          <a href="">고객지원</a>
+          <a href="">로그아웃</a>
+        </div>
+      </header>
+      <div class="dim"></div>
+      <!-- 끝 -->
+
+      <article>
+        <div class="top biz">
+          <h2>BIZ (AI 기업면접)</h2>
+          <p class="txt">기업에서 채용담당자가 AI면접을 통해 인재를 채용할 수 있도록 서비스합니다.<br> 면접 후 <s>지원자의 성향과 적합직군등을 분석한 AI분석 결과 레포트</s>를 확인 할 수 있습니다.</p>
+        </div>
+
+        <!-- 사이드 메뉴 -->
+        <aside>
+          <p>면접관리</p>
+          <ul>
+            <li>
+              <a href="">AI 모의면접</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="">계약리스트</a></li>
+                  <li><a href="">지원자관리</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">AI 기업면접</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="">공고등록</a></li>
+                  <li class="on"><a href="">공고리스트</a></li>
+                  <li><a href="">지원자관리</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">AI 화상면접</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="">공고등록</a></li>
+                  <li><a href="">공고리스트</a></li>
+                  <li><a href="">지원자관리</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <img src="img/img_sidebanner1.png" alt="">
+        </aside>
+        <!-- 끝 -->
+
+        <section class="biz-sec">
+          <div class="sec-inner">
+            <div class="tit-wrap">
+              <h3>계약리스트</h3>
+              <div class="crumb">
+                <span>홈 &nbsp; ></span>
+                <span>면접관리 &nbsp; ></span>
+                <span>BIZ 면접내역</span>
+              </div>
+            </div>
+            <div class="visual">
+              <div class="regi-box">
+                <a class="regi">공고 추가 등록</a>
+              </div>
+              <div class="v-wrap">
+                <div class="calendar">시작일 / 종료일 <img src="img/icon-calendar-bk.svg" alt=""></div>
+                <div class="biz-se">
+                  <div class="select name-email">
+                    <a onclick="selList('name-email')">전체</a>
+                    <div class="select-list">
+                      <a>채용공고</a>
+                      <a>담당자</a>
+                      <a>면접코드</a>
+                    </div>
+                  </div>
+                  <div class="search">
+                    <input type="text">
+                    <a class="btn">검색</a>
+                  </div>
+                </div>
+              </div>
+              <div class="status">
+                <p class="user-rate">면접 가능 인원수(남은 이용수량) : <span>N</span>건</p>
+              </div>
+            </div>
+
+            <div class="table">
+              <table cellspacing="0" cellpadding="0" border="0">
+                <colgroup>
+                  <col width="80px">
+                  <col width="290px">
+                  <col width="80px">
+                  <col width="145px">
+                  <col width="145px">
+                  <col width="80px">
+                  <col width="80px">
+                  <col width="180px">
+                </colgroup>
+                <tr>
+                  <th>NO.</th>
+                  <th>채용공고</th>
+                  <th>담당자</th>
+                  <th>시작일시</th>
+                  <th>마감일시</th>
+                  <th>지원자수</th>
+                  <th>면접코드</th>
+                  <th>수정삭제</th>
+                </tr>
+              </table>
+
+              <div class="cont-none">
+                <img src="img/img_no_content.png" alt="">
+                <p>내역이 확인되지 않습니다.</p>
+              </div>
+            </div>
+            <a class="btn none-btn">공고등록하기</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </div>
+</body>
+<script src="js/main.js"></script>
+</html>

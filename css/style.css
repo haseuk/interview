@@ -37,6 +37,10 @@ img {
   color: #666;
   background-color: #ebebeb;
 }
+.btn.dark {
+  color: #fff;
+  background-color: #333;
+}
 textarea,
 input {
   outline: none;
@@ -346,6 +350,33 @@ input {
   font-weight: 700;
   color: #60594F;
 }
+.container .wrap article .top.uni {
+  background-image: url('../img/img-uni-top.png');
+  padding-top: 0.61111111rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 32.77777778rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+.container .wrap article .top.uni h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  line-height: 2.05555556rem;
+}
+.container .wrap article .top.uni .txt {
+  font-size: 0.88888889rem;
+  line-height: 1.27777778rem;
+  letter-spacing: -0.032em;
+  color: #333;
+}
+.container .wrap article .top.uni .txt span {
+  display: block;
+  margin-bottom: 0.27777778rem;
+}
+.container .wrap article .top.uni .txt s {
+  color: #5F4EEE;
+}
 .container .wrap article aside {
   font-size: 0.83333333rem;
   color: #333;
@@ -470,6 +501,31 @@ input {
   height: 1.11111111rem;
   display: inline-block;
   margin-top: -0.22222222rem;
+}
+.container .wrap article section .sec-inner .visual .status .btn-wrap {
+  text-align: right;
+}
+.container .wrap article section .sec-inner .visual .status .btn-wrap a {
+  font-size: 0.77777778rem;
+  color: #5F4EEE;
+  width: 8.33333333rem;
+  height: 1.94444444rem;
+  line-height: 1.94444444rem;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #5F4EEE;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-left: 0.55555556rem;
+}
+.container .wrap article section .sec-inner .visual .status .btn-wrap a.app-user img {
+  width: 1.44444444rem;
+  height: 1.44444444rem;
+  display: inline-block;
+  margin-bottom: 0.27777778rem;
+}
+.container .wrap article section .sec-inner .visual .status .star-l {
+  float: left;
 }
 .container .wrap.main article .top.m4 {
   background-image: url('../img/img_product.png');
@@ -1003,7 +1059,32 @@ input {
 .container .wrap.interview article section .sec-inner .visual {
   margin-bottom: 1.66666667rem;
 }
-.container .wrap.interview article section .sec-inner .visual .calendar {
+.container .wrap.interview article section .sec-inner .visual .regi-box {
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
+.container .wrap.interview article section .sec-inner .visual .regi-box .regi {
+  font-size: 0.77777778rem;
+  color: #5F4EEE;
+  display: inline-block;
+  width: 8.33333333rem;
+  height: 1.94444444rem;
+  line-height: 1.94444444rem;
+  border: 1px solid #5f4eee;
+  text-align: center;
+}
+.container .wrap.interview article section .sec-inner .visual .v-wrap {
+  zoom: 1;
+}
+.container .wrap.interview article section .sec-inner .visual .v-wrap:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container .wrap.interview article section .sec-inner .visual .v-wrap .calendar {
   font-size: 0.77777778rem;
   line-height: 1.05555556rem;
   color: #333;
@@ -1014,11 +1095,23 @@ input {
   text-align: center;
   box-sizing: border-box;
 }
-.container .wrap.interview article section .sec-inner .visual .calendar img {
+.container .wrap.interview article section .sec-inner .visual .v-wrap .calendar img {
   width: 1rem;
   height: 1rem;
   display: inline-block;
   margin-left: 1.38888889rem;
+}
+.container .wrap.interview article section .sec-inner .visual .v-wrap .biz-se {
+  float: right;
+  margin-right: 0rem;
+}
+.container .wrap.interview article section .sec-inner .visual .v-wrap .biz-se .select,
+.container .wrap.interview article section .sec-inner .visual .v-wrap .biz-se .search {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap.interview article section .sec-inner .visual .v-wrap .biz-se .select {
+  margin-right: 0.55555556rem;
 }
 .container .wrap.interview article section .sec-inner .table table {
   table-layout: fixed;
@@ -1043,6 +1136,18 @@ input {
 }
 .container .wrap.interview article section .sec-inner .table table tr td.end {
   color: #0066FF;
+}
+.container .wrap.interview article section .sec-inner .table .cont-none {
+  margin-top: 1.66666667rem;
+}
+.container .wrap.interview article section .sec-inner .table .cont-none img {
+  display: inline-block;
+}
+.container .wrap.interview article section .sec-inner .table .cont-none p {
+  font-size: 0.77777778rem;
+  line-height: 1.05555556rem;
+  color: #333;
+  text-align: center;
 }
 .container .wrap.interview article section .sec-inner .table .page-nation {
   margin-top: 1.66666667rem;
@@ -1099,6 +1204,78 @@ input {
   background-size: contain;
   opacity: 1;
 }
+.container .wrap.interview article section .sec-inner .table.biz-ta table tr th {
+  line-height: unset;
+  padding-top: 0.22222222rem;
+  padding-right: 0rem;
+  padding-bottom: 0.16666667rem;
+  padding-left: 0rem;
+}
+.container .wrap.interview article section .sec-inner .table.biz-ta table tr td {
+  line-height: unset;
+  padding-top: 1.11111111rem;
+  padding-right: 0rem;
+  padding-bottom: 1.11111111rem;
+  padding-left: 0rem;
+  position: relative;
+}
+.container .wrap.interview article section .sec-inner .table.biz-ta table tr td:nth-child(3) {
+  text-align: left;
+}
+.container .wrap.interview article section .sec-inner .table.biz-ta table tr td span {
+  font-size: 0.66666667rem;
+  color: #999;
+}
+.container .wrap.interview article section .sec-inner .table.biz-ta table tr td.star:after {
+  content: '';
+  display: block;
+  width: 2.22222222rem;
+  height: 2.22222222rem;
+  background-repeat: no-repeat;
+  background-image: url('../img/icon-star-40.png');
+  background-size: contain;
+  position: absolute;
+  right: 1rem;
+  top: 1.11111111rem;
+  left: auto;
+  bottom: auto;
+}
+.container .wrap.interview article section .sec-inner .table.biz-ta table tr td.star-line:after {
+  content: '';
+  display: block;
+  width: 2.22222222rem;
+  height: 2.22222222rem;
+  background-repeat: no-repeat;
+  background-image: url('../img/icon-star-line-40.png');
+  background-size: contain;
+  position: absolute;
+  right: 0.94444444rem;
+  top: 1.11111111rem;
+  left: auto;
+  bottom: auto;
+}
+.container .wrap.interview article section .sec-inner .table.biz-ta table tr td a {
+  width: 3.88888889rem;
+  height: 1.66666667rem;
+  line-height: 1.66666667rem;
+  display: inline-block;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+.container .wrap.interview article section .sec-inner .table.biz-ta table tr td a.enroll {
+  color: #5f4eee;
+  border: 1px solid #5f4eee;
+}
+.container .wrap.interview article section .sec-inner .btn.none-btn {
+  font-size: 1.11111111rem;
+  width: 16.66666667rem;
+  height: 2.77777778rem;
+  line-height: 2.77777778rem;
+  margin-top: 1.66666667rem;
+  margin-right: 0rem;
+  margin-bottom: 9.44444444rem;
+  margin-left: 0rem;
+}
 .container .wrap.interview article section .sec-inner .notice {
   border: 1px solid #e1e1e1;
   border-radius: 0.22222222rem;
@@ -1147,6 +1324,15 @@ input {
   margin-right: 0rem;
   margin-bottom: 1.66666667rem;
   margin-left: 0rem;
+  zoom: 1;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table h4 {
   font-size: 0.88888889rem;
@@ -1156,6 +1342,7 @@ input {
   padding-left: 0.72222222rem;
   box-sizing: border-box;
   font-weight: 500;
+  display: inline-block;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table h4:after {
   content: '';
@@ -1168,6 +1355,75 @@ input {
   width: 0.16666667rem;
   height: 0.94444444rem;
   background-color: #333;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table .load-box {
+  display: inline-block;
+  text-align: right;
+  float: right;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table .load-box .reg-load {
+  font-size: 0.77777778rem;
+  width: 9.44444444rem;
+  height: 1.94444444rem;
+  line-height: 1.94444444rem;
+  text-align: center;
+  background-color: #5f4eee;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table .ico-info-box {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table .ico-info-box .ico-info-type2,
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table .ico-info-box .ico-info-type3 {
+  margin-top: 0.5rem;
+  margin-right: 0rem;
+  margin-bottom: 0rem;
+  margin-left: 0.44444444rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table .ico-info-box .ico-info.ico-info-type1:hover + .ico-info-type-box.type1 {
+  display: inline-block;
+  right: 0rem;
+  top: 0rem;
+  left: auto;
+  bottom: auto;
+  transform: translate(0, -110%);
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table .ico-info-box .ico-info.ico-info-type2:hover + .ico-info-type-box.type2 {
+  display: inline-block;
+  right: 0rem;
+  bottom: 0rem;
+  left: auto;
+  top: auto;
+  transform: translate(10%, 110%);
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table .ico-info-box .ico-info.ico-info-type3:hover + .ico-info-type-box.type3 {
+  display: inline-block;
+  right: 0rem;
+  top: 0rem;
+  left: auto;
+  bottom: auto;
+  transform: translate(80%, -100%);
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table .ico-info-box .ico-info-type-box {
+  font-size: 0.66666667rem;
+  line-height: 1.11111111rem;
+  color: #333;
+  width: 11.33333333rem;
+  background-color: #f7f6ff;
+  border: 1px solid #5f4eee;
+  border-radius: 0.22222222rem;
+  position: absolute;
+  text-align: left;
+  padding-top: 0.55555556rem;
+  padding-right: 0.61111111rem;
+  padding-bottom: 0.55555556rem;
+  padding-left: 0.61111111rem;
+  box-sizing: border-box;
+  display: none;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table {
   table-layout: fixed;
@@ -1201,7 +1457,8 @@ input {
   padding-left: 0.55555556rem;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td input,
-.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td .select {
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td .select,
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td p {
   font-size: 0.77777778rem;
   height: 2.22222222rem;
   line-height: 2.22222222rem;
@@ -1233,6 +1490,10 @@ input {
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td .select:after {
   top: 0.61111111rem;
 }
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td p {
+  padding-left: 0.55555556rem;
+  box-sizing: border-box;
+}
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email input {
   width: 8.05555556rem;
 }
@@ -1256,7 +1517,10 @@ input {
   height: 2.22222222rem;
   line-height: 2.22222222rem;
 }
-.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio input[type=radio] + i {
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio label {
+  margin-right: 5.05555556rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio label input[type=radio] + i {
   width: 0.88888889rem;
   height: 0.88888889rem;
   background-repeat: no-repeat;
@@ -1266,7 +1530,7 @@ input {
   margin-right: 0.22222222rem;
   vertical-align: middle;
 }
-.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio input[type=radio]:checked + i {
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio label input[type=radio]:checked + i {
   width: 0.88888889rem;
   height: 0.88888889rem;
   background-repeat: no-repeat;
@@ -1275,18 +1539,17 @@ input {
   display: inline-block;
   margin-right: 0.22222222rem;
 }
-.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio input {
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio label input {
   display: none;
   height: 0.88888889rem;
   line-height: 0.88888889rem;
 }
-.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio s {
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio label s {
   font-size: 0.77777778rem;
   line-height: 1.05555556rem;
   color: #333;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5.05555556rem;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio span {
   margin-top: -0.44444444rem;
@@ -1388,27 +1651,41 @@ input {
   margin-bottom: 0rem;
   margin-left: 0.94444444rem;
 }
-.container .wrap.none article section .sec-inner .table .cont-none {
-  margin-top: 1.66666667rem;
-}
-.container .wrap.none article section .sec-inner .table .cont-none img {
-  display: inline-block;
-}
-.container .wrap.none article section .sec-inner .table .cont-none p {
+.container .wrap.interview article section.biz-sec .sec-inner .table table tr td .btns a {
   font-size: 0.77777778rem;
-  line-height: 1.05555556rem;
   color: #333;
   text-align: center;
+  width: 2.77777778rem;
+  height: 1.66666667rem;
+  line-height: 1.66666667rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.22222222rem;
+  display: inline-block;
+  margin-top: 0rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0rem;
+  margin-left: 0.5rem;
+  box-sizing: border-box;
 }
-.container .wrap.none article section .sec-inner .btn.none-btn {
-  font-size: 1.11111111rem;
-  width: 16.66666667rem;
-  height: 2.77777778rem;
-  line-height: 2.77777778rem;
-  margin-top: 1.66666667rem;
-  margin-right: 0rem;
-  margin-bottom: 9.44444444rem;
-  margin-left: 0rem;
+.container .wrap.interview article section.biz-sec .sec-inner .table table tr td .btns a.del {
+  color: #999;
+}
+.container .wrap.interview article section.biz-sec .sec-inner .table table tr td .btns a.del.red {
+  color: #eb3838;
+}
+.container .wrap.interview article section.biz-sec .sec-inner .table table tr td a.app-regi {
+  font-size: 0.77777778rem;
+  color: #333;
+  width: 6.11111111rem;
+  height: 1.66666667rem;
+  line-height: 1.66666667rem;
+  border: 1px solid #333;
+  display: inline-block;
+  text-align: center;
+}
+.container .wrap.interview article section.biz-sec .sec-inner .table table tr td a.app-more {
+  border: 1px solid #5f4eee;
+  color: #5F4EEE;
 }
 .container .wrap.manage article section .sec-inner .visual {
   text-align: left;
@@ -1531,6 +1808,9 @@ input {
 .container .wrap.manage article section .sec-inner .visual .v-wrap .name-email,
 .container .wrap.manage article section .sec-inner .visual .v-wrap .mail-ex {
   width: 5.55555556rem;
+}
+.container .wrap.manage article section .sec-inner .visual .v-wrap .sel-all {
+  width: 6.66666667rem;
 }
 .container .wrap.manage article section .sec-inner .visual .v-wrap.v-wrap1 {
   border: 1px solid #ddd;
@@ -1659,7 +1939,8 @@ input {
 .container .wrap.manage article section .sec-inner .visual .job-group.on .select-list,
 .container .wrap.manage article section .sec-inner .visual .job-duty.on .select-list,
 .container .wrap.manage article section .sec-inner .visual .mail-ex.on .select-list,
-.container .wrap.manage article section .sec-inner .visual .name-email.on .select-list {
+.container .wrap.manage article section .sec-inner .visual .name-email.on .select-list,
+.container .wrap.manage article section .sec-inner .visual .sel-all.on .select-list {
   display: inline-block;
 }
 .container .wrap.detail article section .sec-inner .visual .status .down-btn {

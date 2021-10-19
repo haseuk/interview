@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+    <defs>
+        <clipPath id="a">
+            <path data-name="사각형 25232" transform="translate(552.888 564.888)" style="fill:#fff" d="M0 0h26v26H0z"/>
+        </clipPath>
+    </defs>
+    <g style="clip-path:url(#a)">
+        <path d="M16.658 6.54a.886.886 0 0 0-.764-.61l-4.821-.438-1.906-4.461a.888.888 0 0 0-1.633 0L5.628 5.492.807 5.93A.889.889 0 0 0 .3 7.483l3.644 3.2-1.071 4.729a.886.886 0 0 0 1.32.959l4.158-2.485 4.157 2.485a.888.888 0 0 0 1.321-.959l-1.074-4.733L16.4 7.484a.888.888 0 0 0 .258-.944zm0 0" transform="translate(4.649 4.505)" style="fill:#ffb529"/>
+    </g>
+</svg>
