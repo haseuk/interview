@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Interview Master</title>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap interview manage">
+
+      <!--top banner-->
+      <div class="top-banner top-banner1 on">
+        <div class="inner">
+          <p>다시 보지 않기</p>
+          <a class="t-ban-close"><img src="img/btn-close-wh.svg" alt=""></a>
+        </div>
+      </div>
+      <!--top banner 끝-->
+
+      <!-- 네비게이션 -->
+      <header>
+        <h1><a href="/"><img src="img/img-im-logo.svg" alt=""></a></h1>
+        <nav>
+          <a href="" class="m-list">IM기업홈</a>
+          <a href="" class="m-list">면접관리</a>
+          <a href="" class="m-list">통계분석</a>
+          <a href="" class="m-list">기업상품안내</a>
+          <div class="log-box">
+            <a class="login">로그인</a>
+            <a class="logout"><img src="img/img-person.svg" alt="">(주)무한상사IM</a>
+          </div>
+        </nav>
+        <div class="nav-list">
+          <ul>
+            <li>
+              <p>AI 모의면접</p>
+              <a href="">계약리스트</a>
+              <a href="">지원자관리</a>
+              <p>AI 기업면접</p>
+              <a href="">공고등록</a>
+              <a href="">공고리스트</a>
+              <a href="">지원자관리</a>
+              <p>AI 화상면접 <s>N</s></p>
+              <a href="">공고등록</a>
+              <a href="">공고리스트</a>
+              <a href="">지원자관리</a>
+            </li>
+            <li>
+              <p>AI 모의면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+              <p>AI 기업면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+              <p>AI 화상면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+            </li>
+            <li>
+              <p><a href="">전체서비스안내</a></p>
+              <p><a href="">서비스신청</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="my-page">
+          <a href="">기업정보관리</a>
+          <a href="">이용내역</a>
+          <a href="">공지사항</a>
+          <a href="">고객지원</a>
+          <a href="">로그아웃</a>
+        </div>
+      </header>
+      <div class="dim"></div>
+      <!-- 끝 -->
+
+      <article>
+        <div class="top uni">
+          <h2> UNI (AI 화상면접)</h2>
+          <p class="txt"><span>별도의 화상 프로그램 설치 없이 면접자와 인사담당자간의 화상면접을 진행할 수 있는 서비스입니다.</span> 인터뷰마스터의 AI화상면접은 <s>실시간 AI 분석결과를 인사담당자 화면에 제공</s>하여<br> 누구나 쉽게 <s>전문적인 면접</s>을 진행할 수 있도록 합니다.</p>
+        </div>
+
+        <!-- 사이드 메뉴 -->
+        <aside>
+          <p>면접관리</p>
+          <ul>
+            <li>
+              <a href="">AI 모의면접</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="">계약리스트</a></li>
+                  <li><a href="">지원자관리</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">AI 기업면접</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="">공고등록</a></li>
+                  <li><a href="">공고리스트</a></li>
+                  <li><a href="">지원자관리</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">AI 화상면접</a>
+              <div class="sub">
+                <ul>
+                  <li><a href="">공고등록</a></li>
+                  <li class="on"><a href="">공고리스트</a></li>
+                  <li><a href="">지원자관리</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </aside>
+        <!-- 끝 -->
+
+        <section>
+          <div class="sec-inner">
+            <div class="tit-wrap">
+              <h3>공고등록</h3>
+              <div class="crumb">
+                <span>홈 &nbsp; ></span>
+                <span>면접관리 &nbsp; ></span>
+                <span>UNI 면접등록</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec-inner registry">
+            <div class="visual">
+              <div class="v-wrap">
+                <div class="table">
+                  <h4>공고정보</h4>
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <colgroup>
+                      <col width="186px">
+                      <col width="894px">
+                    </colgroup>
+                    <tr>
+                      <th><s>*</s>채용공고명</th>
+                      <td>
+                        <input type="text" placeholder="2021년 상반기 영업/서비스직 공개채용">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>채용분야</th>
+                      <td>
+                        <div class="select job-group">
+                          <a onclick="selList('job-group')">영업판매</a>
+                          <div class="select-list">
+                            <div class="input-box">
+                              <label>
+                                <s>경영/회계</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>사무/기획</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>공무원</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="select job-duty">
+                          <a onclick="selList('job-duty')">국내영업</a>
+                          <div class="select-list">
+                            <div class="input-box">
+                              <label>
+                                <s>경영/회계</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>사무/기획</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>공무원</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>보건/의료/복지</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <span>※ 원하는 직군/직무가 없는 경우, 가장 비슷한 직군/직무를 선택해주세요.</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="table">
+                  <h4>면접자정보[1]</h4>
+                  <div class="load-box">
+                    <a class="reg-load">지원자 선택</a>
+                    <div class="ico-info-box">
+                      <img src="img/icon-info.svg" alt="" class="ico-info ico-info-type1">
+                      <div class="ico-info-type-box type1">
+                        BIZ(AI 기업면접)을 통해 면접을<br>
+                        진행한 지원자의 경우 면접자 선택을<br>
+                        통해 간편등록할 수 있습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <colgroup>
+                      <col width="186px">
+                      <col width="894px">
+                    </colgroup>
+                    <tr>
+                      <th><s>*</s>면접자 이름</th>
+                      <td>
+                        <input type="text" placeholder="한글 2~5자 / 영문2~20자 이내">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>면접자 이메일</th>
+                      <td class="td-email">
+                        <input type="text">
+                        <s>@</s>
+                        <input type="text">
+                        <div class="select mail-ex">
+                          <a onclick="selList('mail-ex')">직접입력</a>
+                          <div class="select-list">
+                            <div class="input-box">
+                              <label>
+                                <s>네이버</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>다음</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>지메일</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th style="vertical-align: top;"><s>*</s>면접일정</th>
+                      <td class="td-calendar">
+                        <a class="date">날짜/시간을 선택해주세요.</a>
+                        <a class="choice-date">2021-07-07 오후 1:00 <img src="img/icon-close-bk.svg" alt=""></a>
+                        <span>※ 화상면접은 현재시간 이후부터 일정 설정이 가능합니다.</span>
+                        <span>※ 화상면접의 건당 면접 시간은 최대 50분입니다.</span>
+                        <div class="calendar">2021-07-07 오후 05:55 <img src="img/icon_calendar_bk.png" alt=""></div>
+                        <div class="time-wrap">
+                          <p class="am">오전</p>
+                          <ul>
+                            <li class="disabled"><a>9:00</a></li>
+                            <li ><a>10:00</a></li>
+                            <li ><a>11:00</a></li>
+                          </ul>
+                        </div>
+                        <div class="time-wrap">
+                          <p class="pm">오후</p>
+                          <ul>
+                            <li class="disabled"><a>12:00</a></li>
+                            <li class="choose"><a>1:00</a></li>
+                            <li><a>2:00</a></li>
+                            <li><a>3:00</a></li>
+                            <li><a>4:00</a></li>
+                            <li><a>5:00</a></li>
+                            <li><a>6:00</a></li>
+                            <li><a>7:00</a></li>
+                          </ul>
+                        </div>
+                        <a class="add"><img src="img/btn-add.svg" alt=""></a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="table">
+                  <h4>면접자정보[2]</h4>
+                  <div class="load-box">
+                    <a class="reg-load">지원자 선택</a>
+                    <div class="ico-info-box">
+                      <img src="img/icon-info.svg" alt="" class="ico-info ico-info-type1">
+                      <div class="ico-info-type-box type1">
+                        BIZ(AI 기업면접)을 통해 면접을<br>
+                        진행한 지원자의 경우 면접자 선택을<br>
+                        통해 간편등록할 수 있습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <colgroup>
+                      <col width="186px">
+                      <col width="894px">
+                    </colgroup>
+                    <tr>
+                      <th><s>*</s>면접자 이름</th>
+                      <td>
+                        <input type="text" placeholder="한글 2~5자 / 영문2~20자 이내">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>면접자 이메일</th>
+                      <td class="td-email">
+                        <input type="text">
+                        <s>@</s>
+                        <input type="text">
+                        <div class="select mail-ex">
+                          <a onclick="selList('mail-ex')">직접입력</a>
+                          <div class="select-list">
+                            <div class="input-box">
+                              <label>
+                                <s>네이버</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>다음</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>지메일</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th style="vertical-align: top;"><s>*</s>면접일정</th>
+                      <td class="td-calendar">
+                        <a class="date">날짜/시간을 선택해주세요.</a>
+                        <a class="choice-date">2021-07-07 오후 1:00 <img src="img/icon-close-bk.svg" alt=""></a>
+                        <span>※ 화상면접은 현재시간 이후부터 일정 설정이 가능합니다.</span>
+                        <span>※ 화상면접의 건당 면접 시간은 최대 50분입니다.</span>
+                        <div class="calendar">2021-07-07 오후 05:55 <img src="img/icon_calendar_bk.png" alt=""></div>
+                        <div class="time-wrap">
+                          <p class="am">오전</p>
+                          <ul>
+                            <li class="disabled"><a>9:00</a></li>
+                            <li ><a>10:00</a></li>
+                            <li ><a>11:00</a></li>
+                          </ul>
+                        </div>
+                        <div class="time-wrap">
+                          <p class="pm">오후</p>
+                          <ul>
+                            <li class="disabled"><a>12:00</a></li>
+                            <li class="choose"><a>1:00</a></li>
+                            <li><a>2:00</a></li>
+                            <li><a>3:00</a></li>
+                            <li><a>4:00</a></li>
+                            <li><a>5:00</a></li>
+                            <li><a>6:00</a></li>
+                            <li><a>7:00</a></li>
+                          </ul>
+                        </div>
+                        <a class="add"><img src="img/btn-add.svg" alt=""></a>
+                        <a class="minus"><img src="img/btn-minus.svg" alt=""></a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="table">
+                  <h4>면접자정보[2]</h4>
+                  <div class="load-box">
+                    <a class="reg-load">지원자 선택</a>
+                    <div class="ico-info-box">
+                      <img src="img/icon-info.svg" alt="" class="ico-info ico-info-type1">
+                      <div class="ico-info-type-box type1">
+                        BIZ(AI 기업면접)을 통해 면접을<br>
+                        진행한 지원자의 경우 면접자 선택을<br>
+                        통해 간편등록할 수 있습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <colgroup>
+                      <col width="186px">
+                      <col width="894px">
+                    </colgroup>
+                    <tr>
+                      <th><s>*</s>면접자 이름</th>
+                      <td>
+                        <input type="text" placeholder="한글 2~5자 / 영문2~20자 이내">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>면접자 이메일</th>
+                      <td class="td-email">
+                        <input type="text">
+                        <s>@</s>
+                        <input type="text">
+                        <div class="select mail-ex">
+                          <a onclick="selList('mail-ex')">직접입력</a>
+                          <div class="select-list">
+                            <div class="input-box">
+                              <label>
+                                <s>네이버</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>다음</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>지메일</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th style="vertical-align: top;"><s>*</s>면접일정</th>
+                      <td class="td-calendar">
+                        <a class="date">날짜/시간을 선택해주세요.</a>
+                        <a class="choice-date">2021-07-07 오후 1:00 <img src="img/icon-close-bk.svg" alt=""></a>
+                        <span>※ 화상면접은 현재시간 이후부터 일정 설정이 가능합니다.</span>
+                        <span>※ 화상면접의 건당 면접 시간은 최대 50분입니다.</span>
+                        <div class="calendar">2021-07-07 오후 05:55 <img src="img/icon_calendar_bk.png" alt=""></div>
+                        <div class="time-wrap">
+                          <p class="am">오전</p>
+                          <ul>
+                            <li class="disabled"><a>9:00</a></li>
+                            <li ><a>10:00</a></li>
+                            <li ><a>11:00</a></li>
+                          </ul>
+                        </div>
+                        <div class="time-wrap">
+                          <p class="pm">오후</p>
+                          <ul>
+                            <li class="disabled"><a>12:00</a></li>
+                            <li class="choose"><a>1:00</a></li>
+                            <li><a>2:00</a></li>
+                            <li><a>3:00</a></li>
+                            <li><a>4:00</a></li>
+                            <li><a>5:00</a></li>
+                            <li><a>6:00</a></li>
+                            <li><a>7:00</a></li>
+                          </ul>
+                        </div>
+                        <a class="add"><img src="img/btn-add.svg" alt=""></a>
+                        <a class="minus"><img src="img/btn-minus.svg" alt=""></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><s>*</s>발송메시지</th>
+                      <td><a class="preview">미리보기</a></td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="table manager-table">
+                  <h4>담당자 정보</h4>
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <colgroup>
+                      <col width="93px">
+                      <col width="93px">
+                      <col width="894px">
+                    </colgroup>
+                    <tr>
+                      <th rowspan="2" colspan="2"><s>*</s>담당자 정보</th>
+                      <td>
+                        <input type="text" placeholder="김영희" class="w-200 man">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="border-top: none;padding-top: 0;">
+                        <input type="text" class="w-200 mr-10 man" placeholder="02-000-000"><input type="text" class="w-200 man" placeholder="0hee@naver.com">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2" class="viewer" style="border-right: 1px solid #ddd;"><s>*</s>면접관<br> 정보<br> (최대<br> 5명)</th>
+                      <th class="viewer1">
+                        면접관1<br>(대표자)
+                        <div class="ico-info-box">
+                          <img src="img/icon-info.svg" alt="" class="ico-info ico-info-type1">
+                          <div class="ico-info-type-box type1">
+                            면접장 입장시 입장승인 처리를 하는<br>
+                            해당 면접의 면접관 대표입니다.
+                          </div>
+                        </div>
+                      </th>
+                      <td class="td-email">
+                        <div class="mb-10"><input type="text" class="w-200"></div>
+                        <input type="text">
+                        <s>@</s>
+                        <input type="text">
+                        <div class="select mail-ex">
+                          <a onclick="selList('mail-ex')">직접입력</a>
+                          <div class="select-list">
+                            <div class="input-box">
+                              <label>
+                                <s>네이버</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>다음</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>지메일</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <span>※ 면접관의 이메일로 면접코드가 포함된 안내 메일이 발송됩니다.</span>
+                        <a class="add"><img src="img/btn-add.svg" alt=""></a>
+                        <a class="minus"><img src="img/btn-minus.svg" alt=""></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="viewer1">면접관2</th>
+                      <td class="td-email">
+                        <div class="mb-10"><input type="text" class="w-200"></div>
+                        <input type="text">
+                        <s>@</s>
+                        <input type="text">
+                        <div class="select mail-ex">
+                          <a onclick="selList('mail-ex')">직접입력</a>
+                          <div class="select-list">
+                            <div class="input-box">
+                              <label>
+                                <s>네이버</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>다음</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                              <label>
+                                <s>지메일</s>
+                                <input type="checkbox">
+                                <i></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <span>※ 면접관의 이메일로 면접코드가 포함된 안내 메일이 발송됩니다.</span>
+                        <a class="add"><img src="img/btn-add.svg" alt=""></a>
+                        <a class="minus"><img src="img/btn-minus.svg" alt=""></a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+            <div class="btns">
+              <a class="btn gray">취소</a>
+              <a class="btn">등록</a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </div>
+</body>
+<script src="js/main.js"></script>
+<script>
+  function selList(v) {
+    let child = document.querySelector(`.${v}`);
+    child.classList.toggle('on');
+  }
+</script>
+</html>

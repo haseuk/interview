@@ -84,6 +84,9 @@ input {
   display: inline-block;
   vertical-align: middle;
 }
+.container .wrap .top-banner.top-banner1 {
+  background: url("../img/img-topbanner-uni.png") no-repeat center top;
+}
 .container .wrap .top-banner.on {
   display: block;
 }
@@ -1137,6 +1140,24 @@ input {
 .container .wrap.interview article section .sec-inner .table table tr td.end {
   color: #0066FF;
 }
+.container .wrap.interview article section .sec-inner .table table tr td .uni-int {
+  width: 5.27777778rem;
+  height: 1.66666667rem;
+  line-height: 1.66666667rem;
+  border: 1px solid #333;
+  display: inline-block;
+  color: #333;
+}
+.container .wrap.interview article section .sec-inner .table table tr td .uni-int.ex,
+.container .wrap.interview article section .sec-inner .table table tr td .uni-int.cancel {
+  border: 1px solid #ddd;
+  color: #999;
+}
+.container .wrap.interview article section .sec-inner .table table tr td .uni-int.ing {
+  border: 1px solid #5f4eee;
+  color: #fff;
+  background-color: #5f4eee;
+}
 .container .wrap.interview article section .sec-inner .table .cont-none {
   margin-top: 1.66666667rem;
 }
@@ -1317,7 +1338,7 @@ input {
   border-radius: 50%;
 }
 .container .wrap.interview article section .sec-inner.registry .visual {
-  margin-bottom: 4.27777778rem;
+  margin-bottom: 1.66666667rem;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table {
   margin-top: 0rem;
@@ -1363,9 +1384,12 @@ input {
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table .load-box .reg-load {
   font-size: 0.77777778rem;
-  width: 9.44444444rem;
   height: 1.94444444rem;
   line-height: 1.94444444rem;
+  padding-top: 0rem;
+  padding-right: 0.83333333rem;
+  padding-bottom: 0rem;
+  padding-left: 0.83333333rem;
   text-align: center;
   background-color: #5f4eee;
   color: #fff;
@@ -1490,9 +1514,22 @@ input {
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td .select:after {
   top: 0.61111111rem;
 }
-.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td p {
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td .preview {
+  font-size: 0.77777778rem;
+  width: 5.27777778rem;
+  height: 1.94444444rem;
+  line-height: 1.94444444rem;
+  border: 1px solid #5f4eee;
+  text-align: center;
+  color: #5F4EEE;
+  display: inline-block;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td > p {
   padding-left: 0.55555556rem;
   box-sizing: border-box;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email {
+  position: relative;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email input {
   width: 8.05555556rem;
@@ -1512,10 +1549,97 @@ input {
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email .mail-ex {
   width: 7.77777778rem;
 }
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email .add,
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email .minus {
+  position: absolute;
+  left: 27.33333333rem;
+  top: 3.77777778rem;
+  right: auto;
+  bottom: auto;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-email .minus {
+  left: 29.27777778rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar {
+  position: relative;
+}
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .calendar {
   width: 11.66666667rem;
   height: 2.22222222rem;
   line-height: 2.22222222rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .date,
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .choice-date {
+  font-size: 0.77777778rem;
+  line-height: 2.22222222rem;
+  text-align: left;
+  color: #333;
+  width: 12.83333333rem;
+  height: 2.22222222rem;
+  display: inline-block;
+  background-color: #f7f6ff;
+  border: 1px solid #d7dce5;
+  padding-left: 0.55555556rem;
+  box-sizing: border-box;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .date {
+  margin-right: 0.55555556rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .choice-date img {
+  display: inline-block;
+  float: right;
+  margin-top: 0.5rem;
+  margin-right: 0.55555556rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.55555556rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .choice-date + span + span {
+  margin-bottom: 0.55555556rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .time-wrap {
+  margin-top: 0.55555556rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .time-wrap ul {
+  font-size: 0rem;
+  width: 22.22222222rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .time-wrap ul li {
+  font-size: 0.77777778rem;
+  width: 5rem;
+  height: 2.22222222rem;
+  color: #333;
+  line-height: 2.22222222rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin-top: 0rem;
+  margin-right: 0.55555556rem;
+  margin-bottom: 0.55555556rem;
+  margin-left: 0rem;
+  box-shadow: 0 2px 4px 0 rgba(17, 42, 128, 0.08);
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .time-wrap ul li.disabled {
+  color: #999;
+  background-color: #fafafa;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .time-wrap ul li.choose {
+  background-color: #f7f6ff;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .add {
+  position: absolute;
+  right: 2.22222222rem;
+  top: 6.55555556rem;
+  left: auto;
+  bottom: auto;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-calendar .minus {
+  position: absolute;
+  right: 2.22222222rem;
+  top: 8.5rem;
+  left: auto;
+  bottom: auto;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table table tr td.td-radio label {
   margin-right: 5.05555556rem;
@@ -1555,6 +1679,60 @@ input {
   margin-top: -0.44444444rem;
   text-indent: -0.77777778rem;
   margin-left: 0.77777778rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.dis td .select {
+  background-color: #fafafa;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.dis td .select a {
+  pointer-events: none;
+  color: #999;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.dis td .select:after {
+  opacity: 0.5;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.dis td textarea {
+  font-size: 0.88888889rem;
+  text-align: left;
+  color: #333;
+  width: 48.55555556rem;
+  height: 15.72222222rem;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  border: 1px solid #ddd;
+  padding: 0.55555556rem;
+  box-sizing: border-box;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.manager-table input.man {
+  background-color: #fafafa;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.manager-table .viewer {
+  padding-top: 0.94444444rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 1.66666667rem;
+  text-indent: -0.38888889rem;
+  margin-left: 0.38888889rem;
+  line-height: 1.33333333rem;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.manager-table .viewer1 {
+  padding: 0rem;
+  text-align: center;
+  line-height: 1.33333333rem;
+  position: relative;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.manager-table .viewer1 .ico-info-box {
+  position: absolute;
+  right: 0rem;
+  top: 2.22222222rem;
+  left: auto;
+  bottom: auto;
+}
+.container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.manager-table td input + s {
+  font-size: 0.77777778rem;
+  line-height: 1.05555556rem;
+  color: #999;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.55555556rem;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.table2 {
   margin-bottom: 0rem;
@@ -1802,7 +1980,9 @@ input {
   width: 9.11111111rem;
 }
 .container .wrap.manage article section .sec-inner .visual .v-wrap .job-group,
-.container .wrap.manage article section .sec-inner .visual .v-wrap .job-duty {
+.container .wrap.manage article section .sec-inner .visual .v-wrap .job-duty,
+.container .wrap.manage article section .sec-inner .visual .v-wrap .field,
+.container .wrap.manage article section .sec-inner .visual .v-wrap .last-enroll {
   width: 8.88888889rem;
 }
 .container .wrap.manage article section .sec-inner .visual .v-wrap .name-email,
@@ -1877,6 +2057,74 @@ input {
   background-image: url('../img/btn-close.svg');
   background-size: contain;
 }
+.container .wrap.manage article section .sec-inner .visual .sort {
+  display: inline-block;
+}
+.container .wrap.manage article section .sec-inner .visual .sort label {
+  display: block;
+  height: 1.94444444rem;
+  line-height: 1.94444444rem;
+}
+.container .wrap.manage article section .sec-inner .visual .sort label s {
+  font-size: 0.77777778rem;
+  line-height: 1.05555556rem;
+  color: #333;
+  text-align: left;
+  vertical-align: middle;
+}
+.container .wrap.manage article section .sec-inner .visual .sort label input[type=checkbox] + i {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../img/checkbox-none.svg');
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 0.27777778rem;
+}
+.container .wrap.manage article section .sec-inner .visual .sort label input[type=checkbox]:checked + i {
+  width: 0.88888889rem;
+  height: 0.88888889rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../img/checkbox.svg');
+  background-size: contain;
+}
+.container .wrap.manage article section .sec-inner .visual .sort label input {
+  display: none;
+}
+.container .wrap.manage article section .sec-inner .visual .sort + .status .btn-wrap {
+  text-align: left;
+  zoom: 1;
+}
+.container .wrap.manage article section .sec-inner .visual .sort + .status .btn-wrap:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container .wrap.manage article section .sec-inner .visual .sort + .status .btn-wrap a {
+  margin-top: 0rem;
+  margin-right: 0.55555556rem;
+  margin-bottom: 0rem;
+  margin-left: 0rem;
+}
+.container .wrap.manage article section .sec-inner .visual .sort + .status .btn-wrap a.down-btn {
+  float: none;
+}
+.container .wrap.manage article section .sec-inner .visual .sort + .status .btn-wrap .v-wrap {
+  display: inline-block;
+  float: right;
+  margin-bottom: 0rem;
+}
+.container .wrap.manage article section .sec-inner .visual .sort + .status .btn-wrap .v-wrap .last-enroll {
+  margin-right: 0rem;
+}
+.container .wrap.manage article section .sec-inner .visual .sort + .status .btn-wrap .v-wrap .last-enroll a {
+  text-align: left;
+}
 .container .wrap.manage article section .sec-inner .visual .search {
   margin-right: 0rem !important;
 }
@@ -1940,7 +2188,9 @@ input {
 .container .wrap.manage article section .sec-inner .visual .job-duty.on .select-list,
 .container .wrap.manage article section .sec-inner .visual .mail-ex.on .select-list,
 .container .wrap.manage article section .sec-inner .visual .name-email.on .select-list,
-.container .wrap.manage article section .sec-inner .visual .sel-all.on .select-list {
+.container .wrap.manage article section .sec-inner .visual .sel-all.on .select-list,
+.container .wrap.manage article section .sec-inner .visual .field.on .select-list,
+.container .wrap.manage article section .sec-inner .visual .last-enroll.on .select-list {
   display: inline-block;
 }
 .container .wrap.detail article section .sec-inner .visual .status .down-btn {

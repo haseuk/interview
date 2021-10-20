@@ -24,6 +24,7 @@ textarea, input { outline: none; }
         p { .fs(16); .lh(23); color:#fff; .ib; .vam; .mr(13); }
         .t-ban-close { .ib; .vam; }
       }
+      &.top-banner1 { background: url("../img/img-topbanner-uni.png") no-repeat center top;}
       &.on { .block; }
     }
 
@@ -323,6 +324,10 @@ textarea, input { outline: none; }
                   td { .fs(14); .c-3; .lh(40); .-b(#ddd); .-box;
                     &.able { .c-9; }
                     &.end { color:#0066FF; }
+                    .uni-int { .wh(95,30); .lh(30); .-a(#333); .ib; .c-3;
+                      &.ex, &.cancel { .-a(#ddd); .c-9; }
+                      &.ing { .-a(#5f4eee); color:#fff; .bgc(#5f4eee); }
+                    }
                   }
                 }
               }
@@ -371,14 +376,14 @@ textarea, input { outline: none; }
               }
             }
             &.registry {
-              .visual { .mb(77);
+              .visual { .mb(30);
                 .v-wrap {
                   .table { .m(0,0,30); .clear;
                     h4 { .fs(16); .lh(23); .c-3; .rel; .pl(13); .-box; .medium; .ib;
                       &:after { .cnt; .abs; .lt(0,3); .wh(3,17); .bgc(#333); }
                     }
                     .load-box { .ib; .tr; .fr;
-                      .reg-load { .fs(14); .wh(170,35); .lh(35); .tc; .bgc(#5f4eee); color:#fff; .ib; .vat; }
+                      .reg-load { .fs(14); .h(35); .lh(35); .p(0,15); .tc; .bgc(#5f4eee); color:#fff; .ib; .vat; }
                     }
                     .ico-info-box { .ib; .vat; .rel;
                     .ico-info-type2, .ico-info-type3 { .m(9,0,0,8); }
@@ -403,15 +408,32 @@ textarea, input { outline: none; }
                             a { .f; .lh(40); }
                             &:after { .t(11); }
                           }
-                          p { .pl(10); .-box; }
-                          &.td-email {
+                          .preview { .fs(14); .wh(95,35); .lh(35); .-a(#5f4eee); .tc; .c-pur; .ib; }
+                          > p { .pl(10); .-box; }
+                          &.td-email { .rel;
                             input { .w(145); }
                             input + s { .fs(14); .c-3; .lh(40); .w(33); .ib; .tc; .vam; }
                             input + s + input { .mr(9); }
                             .mail-ex { .w(140); }
+                            .add, .minus { .abs; .lt(492,68); }
+                            .minus { .l(527); }
                           }
-                          &.td-calendar {
+                          &.td-calendar { .rel;
                             .calendar { .wh(210,40); .lh(40); }
+                            .date, .choice-date { .fs(14); .lh(40); .ib; .tl; .c-3; .wh(231,40); .ib; .bgc(#f7f6ff); .-a(#d7dce5); .pl(10); .-box; }
+                            .date { .mr(10); }
+                            .choice-date img { .ib; .fr; .m(9,10); }
+                            .choice-date + span + span { .mb(10); }
+                            .time-wrap { .mt(10);
+                              ul { .fs(0); .w(400);
+                                li { .fs(14); .wh(90,40); .c-3; .lh(40); .tc; .-a(#ddd); .m(0,10,10,0); box-shadow: 0 2px 4px 0 rgba(17, 42, 128, 0.08); .ib; .vam; .-box;
+                                  &.disabled { .c-9; .bgc(#fafafa); }
+                                  &.choose { .bgc(#f7f6ff); }
+                                }
+                              }
+                            }
+                            .add { .abs; .rt(40,118); }
+                            .minus { .abs; .rt(40,153); }
                           }
                           &.td-radio {
                             label { .mr(91);
@@ -424,6 +446,23 @@ textarea, input { outline: none; }
                           }
                         }
                       }
+                    }
+                    &.dis {
+                      td {
+                        .select { .bgc(#fafafa);
+                          a { pointer-events: none; .c-9; }
+                          &:after { opacity: 0.5;}
+                        }
+                        textarea { .fs(16); .tl; .c-3; .wh(874,283); font-family: 'Spoqa Han Sans Neo', 'sans-serif'; .-a(#ddd); .p(10); .-box; }
+                      }
+                    }
+                    &.manager-table {
+                      input.man { .bgc(#fafafa); }
+                      .viewer { .p(17,0,0,30); .ti(-7); .ml(7); .lh(24); }
+                      .viewer1 { .p(0); .tc; .lh(24); .rel;
+                        .ico-info-box { .abs; .rt(0,40); }
+                      }
+                      td input + s { .fs(14); .lh(19); .c-9; .ib; .vam; .ml(10); }
                     }
                     &.table2 { .mb(0);
                       .pr-txt { .bgc(#fafafa); .p(10,0,10,34); .-box;
@@ -494,7 +533,7 @@ textarea, input { outline: none; }
                 > div { .mr(10); .ib; .vam; }
                 .gender { .w(82); }
                 .age { .w(164); }
-                .job-group, .job-duty { .w(160); }
+                .job-group, .job-duty, .field, .last-enroll { .w(160); }
                 .name-email, .mail-ex { .w(100); }
                 .sel-all { .w(120); }
 
@@ -511,6 +550,24 @@ textarea, input { outline: none; }
                 }
               }
 
+              .sort { .ib;
+                label { .block; .h(35); .lh(35);
+                  s { .fs(14); .lh(19); .c-3; .tl; .vam; }
+                  input[type=checkbox] + i { .wh(16,16); .ib; .contain('../img/checkbox-none.svg'); .vam; .mr(5); }
+                  input[type=checkbox]:checked + i { .wh(16,16); .ib; .contain('../img/checkbox.svg'); }
+                  input { .hide; }
+                }
+              }
+              .sort + .status .btn-wrap { .tl; .clear;
+                a { .m(0,10,0,0);
+                  &.down-btn { float: none; }
+                }
+                .v-wrap { .ib; .fr; .mb(0);
+                  .last-enroll { .mr(0);
+                    a { .tl; }
+                  }
+                }
+              }
               .search { .mr(0)!important;
                 input { .-a(#ddd); .wh(293,35); .-box; .pl(10); .vam; }
                 .btn { .fs(14); .wh(80,35); .lh(35); .vam; }
@@ -523,7 +580,7 @@ textarea, input { outline: none; }
                   s { .fs(14); .lh(19); .c-3; .ib; .vam; .mt(3); }
                 }
               }
-              .choice.on, .gender.on, .age.on, .job-group.on, .job-duty.on, .mail-ex.on, .name-email.on, .sel-all.on {
+              .choice.on, .gender.on, .age.on, .job-group.on, .job-duty.on, .mail-ex.on, .name-email.on, .sel-all.on, .field.on, .last-enroll.on {
                 .select-list { .ib; }
               }
             }
