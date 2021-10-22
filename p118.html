@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
-
   <title>Interview Master</title>
 </head>
 <body>
   <div class="container">
-    <div class="wrap interview manage">
+    <div class="wrap main service">
 
       <!-- 네비게이션 -->
       <header>
@@ -70,69 +69,78 @@
       <!-- 끝 -->
 
       <article>
-        <div class="top biz">
-          <h2>BIZ (AI 기업면접)</h2>
-          <p class="txt">기업에서 채용담당자가 AI면접을 통해 인재를 채용할 수 있도록 서비스합니다.<br> 면접 후 <s>지원자의 성향과 적합직군등을 분석한 AI분석 결과 레포트</s>를 확인 할 수 있습니다.</p>
+        <div class="top m4-1">
+          <h2>서비스 신청</h2>
         </div>
 
         <!-- 사이드 메뉴 -->
         <aside>
-          <p>면접관리</p>
+          <p>기업상품안내</p>
           <ul>
-            <li>
-              <a href="">AI 모의면접</a>
-              <div class="sub">
-                <ul>
-                  <li><a href="">계약리스트</a></li>
-                  <li><a href="">지원자관리</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="">AI 기업면접</a>
-              <div class="sub">
-                <ul>
-                  <li><a href="">공고등록</a></li>
-                  <li><a href="">공고리스트</a></li>
-                  <li class="on"><a href="">지원자관리</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="">AI 화상면접</a>
-              <div class="sub">
-                <ul>
-                  <li><a href="">공고등록</a></li>
-                  <li><a href="">공고리스트</a></li>
-                  <li><a href="">지원자관리</a></li>
-                </ul>
-              </div>
-            </li>
+            <li><a href="">전체서비스안내</a></li>
+            <li><a href="">서비스신청</a></li>
           </ul>
-          <img src="img/img_sidebanner1.png" alt="">
         </aside>
         <!-- 끝 -->
 
         <section>
           <div class="sec-inner">
             <div class="tit-wrap">
-              <h3>지원자관리</h3>
+              <h3>서비스신청</h3>
               <div class="crumb">
                 <span>홈 &nbsp; ></span>
-                <span>면접관리 &nbsp; ></span>
-                <span>BIZ 지원자관리</span>
+                <span>기업상품안내 &nbsp; ></span>
+                <span>서비스신청</span>
               </div>
             </div>
-            <div class="visual" style="margin-bottom: 0">
-              <div class="status">
-                <img src="img/icon_star_l.svg" alt="" class="star-l">
-                <div class="btn-wrap">
-                  <a class="v-inter">화상면접 등록</a>
+          </div>
+
+          <div class="service-last">
+            <img src="img/img-check-small.svg" alt="">
+            <p class="s-tit"><s>서비스 신청</s>이 완료되었습니다.</p>
+            <p class="s-txt">지금부터 <s>PRI</s>서비스 이용이 가능합니다.</p>
+<!--            <p class="s-txt">결제(입금)가 완료되면 서비스 이용이 가능합니다.</p>-->
+
+            <div class="service-content pri">
+              <div class="cont-wrap">
+                <div class="cont-inner">
+                  <div class="cont-top">
+                    <p>PRI 베이직 3개월</p>
+                    <p><i>₩</i> 26,700 <s>/월 8,900원</s></p>
+                  </div>
+                  <div class="cont-txt">
+                    <p>
+                      <s>기업</s>
+                      • 주사용처 : 대학, 특성화고, 취업관련 교육기관<br>
+                      • 키오스크 내 서비스 연동 제공(키오스크 기기 별도)<br>
+                      • 자사 플렛품의 타사 통계 비교데이터 제공<br>
+                      • 면접 및 지원자 통계 제공
+                    </p>
+                    <p>
+                      <s>지원자</s>
+                      • 1인당 이용횟수 무제한<br>
+                      • 면접 건별 결과분석 제공<br>
+                      • 모바일 app, PC 웹 지원<br>
+                      • 90일간 면접영상 Play 제공
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="price-wrap">
+                <div class="pri-inner">
+                  <p class="pr-f">최종 결제금액 <s>26,700<i>원</i></s></p>
+                  <p>신청인원 <s>10인</s></p>
+                  <p>결제금액 <s>26,700원</s></p>
+                  <p>할인적용 <s>0원</s></p>
+                  <p class="sn">구매번호 <s>2021010110412259SA8K</s></p>
+                  <p>결제수단 <s>신용카드</s></p>
+                  <p>거래일시 <s>2021-01-01 10:41:55</s></p>
                 </div>
               </div>
             </div>
-            <div class="report">
-              <img src="img/img-report.png" alt="">
+            <div class="btns">
+              <a>계약 • 결제 내역</a>
+              <a class="btn">확인</a>
             </div>
           </div>
         </section>
@@ -141,11 +149,4 @@
   </div>
 </body>
 <script src="js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js"></script>
-<script>
-  function selList(v) {
-    let child = document.querySelector(`.${v}`);
-    child.classList.toggle('on');
-  }
-</script>
 </html>

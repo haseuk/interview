@@ -4,10 +4,10 @@
             <path id="사각형_25782" data-name="사각형 25782" transform="translate(820 887)" style="fill:#ffb5b5" d="M0 0h30v30H0z"/>
         </clipPath>
         <style>
-            .cls-3{fill:#fff}
+            .cls-3{fill:#999}
         </style>
     </defs>
-    <g id="img_coin" transform="translate(-820 -887)" style="clip-path:url(#clip-path)">
+    <g id="img_coin_gray" transform="translate(-820 -887)" style="clip-path:url(#clip-path)">
         <g id="coin_2_" data-name="coin (2)" transform="translate(813.723 851.851)">
             <path id="패스_8781" data-name="패스 8781" class="cls-3" d="M230.8 357.6h9.583a.8.8 0 1 0 0-1.6H230.8a.8.8 0 1 0 0 1.6zm0 0" transform="translate(-206.902 -300.613)"/>
             <path id="패스_8782" data-name="패스 8782" class="cls-3" d="M230.8 397.6h9.583a.8.8 0 1 0 0-1.6H230.8a.8.8 0 1 0 0 1.6zm0 0" transform="translate(-206.902 -337.566)"/>

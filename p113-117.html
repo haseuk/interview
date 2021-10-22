@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Interview Master</title>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap main service">
+
+      <!-- 네비게이션 -->
+      <header>
+        <h1><a href="/"><img src="img/img-im-logo.svg" alt=""></a></h1>
+        <nav>
+          <a href="" class="m-list">IM기업홈</a>
+          <a href="" class="m-list">면접관리</a>
+          <a href="" class="m-list">통계분석</a>
+          <a href="" class="m-list">기업상품안내</a>
+          <div class="log-box">
+            <a class="login">로그인</a>
+            <a class="logout"><img src="img/img-person.svg" alt="">(주)무한상사IM</a>
+          </div>
+        </nav>
+        <div class="nav-list">
+          <ul>
+            <li>
+              <p>AI 모의면접</p>
+              <a href="">계약리스트</a>
+              <a href="">지원자관리</a>
+              <p>AI 기업면접</p>
+              <a href="">공고등록</a>
+              <a href="">공고리스트</a>
+              <a href="">지원자관리</a>
+              <p>AI 화상면접 <s>N</s></p>
+              <a href="">공고등록</a>
+              <a href="">공고리스트</a>
+              <a href="">지원자관리</a>
+            </li>
+            <li>
+              <p>AI 모의면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+              <p>AI 기업면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+              <p>AI 화상면접</p>
+              <a href="">면접통계 • 분석</a>
+              <a href="">지원자통계 • 분석</a>
+            </li>
+            <li>
+              <p><a href="">전체서비스안내</a></p>
+              <p><a href="">서비스신청</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="my-page">
+          <a href="">기업정보관리</a>
+          <a href="">이용내역</a>
+          <a href="">공지사항</a>
+          <a href="">고객지원</a>
+          <a href="">로그아웃</a>
+        </div>
+      </header>
+      <div class="dim"></div>
+      <!-- 끝 -->
+
+      <article>
+        <div class="top m4-1">
+          <h2>서비스 신청</h2>
+        </div>
+
+        <!-- 사이드 메뉴 -->
+        <aside>
+          <p>기업상품안내</p>
+          <ul>
+            <li><a href="">전체서비스안내</a></li>
+            <li><a href="">서비스신청</a></li>
+          </ul>
+        </aside>
+        <!-- 끝 -->
+
+        <section class="payment-step">
+          <div class="sec-inner">
+            <div class="tit-wrap">
+              <h3>서비스신청</h3>
+              <div class="crumb">
+                <span>홈 &nbsp; ></span>
+                <span>기업상품안내 &nbsp; ></span>
+                <span>서비스신청</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ser-wrap">
+            <h4>신청상품</h4>
+            <div class="table">
+              <table>
+                <colgroup>
+                  <col width="20%">
+                  <col width="20%">
+                  <col width="20%">
+                  <col width="20%">
+                  <col width="20%">
+                </colgroup>
+                <tr>
+                  <th>상품명</th>
+                  <th>사용기간</th>
+                  <th>1인금액</th>
+                  <th>신청인원</th>
+                  <th>신청인원</th>
+                </tr>
+                <tr>
+                  <td>BIZ 스페셜 101 TO 1000</td>
+                  <td>2021.01.01 ~2021.01.01</td>
+                  <td>7,800원</td>
+                  <td>500</td>
+                  <td>3,900,000원</td>
+                </tr>
+              </table>
+            </div>
+            <h4>할인적용</h4>
+            <div class="ds-cont">
+              <div class="app-pri">
+                <p class="tit">신청금액</p>
+                <p class="txt">3,900,00원</p>
+              </div>
+              <p class="minus"> <span>-</span> </p>
+              <div class="ds-pri">
+                <p class="tit">할인금액</p>
+                <p class="txt">78,000원</p>
+              </div>
+              <p class="equal"> <span>=</span> </p>
+              <div class="t-pri">
+                <p class="tit">최종결제금액</p>
+                <p class="txt"><s>3,822,000</s>원</p>
+              </div>
+            </div>
+            <div class="coupon">
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>쿠폰할인</s>
+              </label>
+              <input type="text">
+              <span>원</span>
+              <div class="lookup">쿠폰조회</div>
+              <img src="img/icon-checked-violet.svg" alt="">
+              <p>쿠폰자동 적용중</p>
+            </div>
+          </div>
+          <div class="payment-wrap active-card">
+            <div class="payment-type">
+              <p>결제 수단</p>
+              <div class="payments">
+                <a onclick="payType('card');" class="card on"><s></s><p>신용카드</p></a>
+                <a onclick="payType('wallet');" class="wallet"><s></s><p>무통장입금</p></a>
+                <a onclick="payType('coin');" class="coin"><s></s><p>실시간<br>계좌이체</p></a>
+
+
+                <div class="by-type card-wrap">
+                  <p class="p-noti">•신용카드 결제 세금계산서 발행 불가 안내<br>부가가치세법에 의거 신용카드로 결제하는 경우 세금계산서를 발급하지 않고 신용카드 매출전표가 세금계산서를 대체합니다.</p>
+                </div>
+
+                <div class="by-type wallet-wrap tax-method">
+                  <p class="tit">결제증빙 선택</p>
+                  <div class="choice-wrap">
+                    <div class="label">
+                      <label>
+                        <input type="radio" name="pay" value="tax" onclick="typeValu('tax')" checked>
+                        <i></i>
+                        <s>세금계산서</s>
+                      </label>
+                      <label>
+                        <input type="radio" name="pay" value="cash" onclick="typeValu('cash')">
+                        <i></i>
+                        <s>현금영수증</s>
+                      </label>
+                      <label>
+                        <input type="radio" name="pay" value="empty" onclick="typeValu('empty')">
+                        <i></i>
+                        <s>신청 안함</s>
+                      </label>
+                    </div>
+
+                    <!--세금계산서-->
+                    <div class="tax method">
+                      <div class="table">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <colgroup>
+                            <col width="186px">
+                            <col width="524px">
+                          </colgroup>
+                          <tr>
+                            <th><s>*</s>사업자등록번호</th>
+                            <td>
+                              <input type="text">
+                              <input type="text">
+                              <input type="text">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th><s>*</s>상호(법인)명</th>
+                            <td><input type="text" class="w-380"></td>
+                          </tr>
+                          <tr>
+                            <th><s>*</s>대표자</th>
+                            <td><input type="text" class="w-250"></td>
+                          </tr>
+                          <tr>
+                            <th><s>*</s>담당자</th>
+                            <td><input type="text" class="w-250"></td>
+                          </tr>
+                          <tr>
+                            <th><s>*</s>이메일</th>
+                            <td><input type="text" class="w-380"></td>
+                          </tr>
+                          <tr>
+                            <th><s>*</s>연락처</th>
+                            <td class="phone">
+                              <input type="text"><s>-</s>
+                              <input type="text"><s>-</s>
+                              <input type="text">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th><s>*</s>종목</th>
+                            <td><input type="text" class="w-380"></td>
+                          </tr>
+                          <tr>
+                            <th><s>*</s>업태</th>
+                            <td><input type="text" class="w-380"></td>
+                          </tr>
+                          <tr>
+                            <th class="vt"><s>*</s>담당자 정보</th>
+                            <td class="add-input">
+                              <input type="text"><a class="add-btn">주소찾기</a>
+                              <div class="mt-10">
+                                <input type="text" class="add1">
+                                <input type="text" class="add2">
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <p class="p-noti">•모든 항목을 입력해 주세요. 결제완료 후 열업일 기준 2일 내에 세금계산서가 발행됩니다.</p>
+                    </div>
+
+                    <!--현금영수증-->
+                    <div class="cash method office-cash">
+                      <div class="table">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <colgroup>
+                            <col width="186px">
+                            <col width="524px">
+                          </colgroup>
+                          <tr>
+                            <th class="h-59"><s>*</s>영수증 용도</th>
+                            <td>
+                              <label>
+                                <input type="radio" name="use" value="" onclick="purp('office')" checked>
+                                <i></i>
+                                <s>소득공제용(근로자 연말정산용)</s>
+                              </label>
+                              <label>
+                                <input type="radio" name="use" value="" onclick="purp('operator')" >
+                                <i></i>
+                                <s>지출증빙용(사업자 경비인정용)</s>
+                              </label>
+                            </td>
+                          </tr>
+                          <tr class="office">
+                            <th class="vt"><s>*</s>담당자 정보</th>
+                            <td>
+                              <label>
+                                <input type="radio" name="num" value="" checked>
+                                <i></i>
+                                <s>현금영수증 카드번호</s>
+                              </label>
+                              <label>
+                                <input type="radio" name="num" value="">
+                                <i></i>
+                                <s>휴대폰 번호</s>
+                              </label>
+                              <input type="text" class="c-num">
+                            </td>
+                          </tr>
+                          <tr class="operator">
+                            <th class="vt"><s>*</s>발급정보</th>
+                            <td>
+                              <p>사업자등록번호</p>
+                              <input type="text" class="">
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!--신청안함-->
+                    <div class="empty method">
+                      <p class="em-p">
+                        <s>전자세금계산서 교부 의무화에 따라 결제 시 결제증빙을 신청하지 않을 경우<br>
+                        현금영수증 자진발급분으로 임의 발행됩니다. 현금영수증 자진발급 이후에는 세금계산서 발행이 불가능합니다.</s><br>
+                        자진발급분은 국세청 현금영수증 사이트를 통해 ‘자진발급분 사용자등록’을 하셔야만 결제증빙효력이 발생됩니다.<br>
+                        지출증빙용 현금영수증은 세금계산서로 대체 가능(부가 가치세법 제32조의2 제3항)하므로<br>
+                        현금영수증 발행 후 세금계산서 발행으로 결제증빙 변경을 원하실 경우 현금영수증 사이트를 통해 현금영수증의 용도를<br>
+                        ‘지출증빙’으로 직접 변경해 주시기 바랍니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="f-payment">
+              <p class="tit">최종결제</p>
+              <div class="f-inner">
+                <p>신청금액 <s>3,900,000원</s></p>
+                <p>할인적용 <s>-78,000원</s></p>
+                <p class="f-pri">3,822,000 <s>원</s></p>
+              </div>
+              <div class="agree">
+                <p class="tit">주문동의</p>
+                <div class="a-wrap">
+                  <label>
+                    <input type="checkbox">
+                    <i></i>
+                    <s>결제 대행 서비스 약관 동의</s>
+                  </label>
+                  <a class="detail" onclick="agree('agree');"><i></i> <s></s></a>
+                  <div class="agree-cont">
+                    <a>전자금융거래 기본약관 ></a>
+                    <a>개인정보 수집 및 이용안내 ></a>
+                    <a>개인정보 제공 및 위탁안내 ></a>
+                  </div>
+                </div>
+                <div class="a-wrap">
+                  <label>
+                    <input type="checkbox">
+                    <i></i>
+                    <s class="s">선택한 상품의 종류, 금액, 할인내역,
+                      기간 등을 확인하였으며, 결제에
+                      동의합니다. (전자상거래법 제8조 2항)</s>
+                  </label>
+                </div>
+              </div>
+              <a class="btn">결제하기</a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </div>
+</body>
+<script src="js/main.js"></script>
+<script>
+  let paymentWrap = document.querySelector('.payment-wrap');
+  let payments = document.querySelectorAll('.payments a');
+  function payType(v) {
+    Array.prototype.forEach.call(payments, function(e) {
+      e.classList.remove('on');
+    });
+    let type = document.querySelector(`.${v}`);
+    type.classList.add('on');
+    paymentWrap.classList.remove('active-card', 'active-wallet', 'active-coin')
+    paymentWrap.classList.toggle(`active-${v}`);
+  }
+
+  function agree(v) {
+    let type = document.querySelector(`.${v}`);
+    type.classList.toggle('on');
+  }
+
+  let wallet = document.querySelector('.wallet-wrap');
+  function typeValu(v) {
+    wallet.classList.remove('tax-method','cash-method','empty-method');
+    wallet.classList.add(`${v}-method`);
+  }
+
+  let cash = document.querySelector('.cash');
+  function purp(v) {
+    cash.classList.remove('office-cash','operator-cash');
+    cash.classList.add(`${v}-cash`);
+  }
+
+</script>
+</html>

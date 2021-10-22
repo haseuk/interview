@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_25781" data-name="사각형 25781" transform="translate(687 888)" style="fill:#ffb5b5" d="M0 0h30v30H0z"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#999}
+        </style>
+    </defs>
+    <g id="img_wallet_gray" transform="translate(-687 -888)" style="clip-path:url(#clip-path)">
+        <g id="wallet" transform="translate(689 889)">
+            <path id="XMLID_436_" class="cls-3" d="M23.886 19.633v1.954a1.956 1.956 0 0 1-1.954 1.954H5.127A3.13 3.13 0 0 1 2 20.414V7.127A3.13 3.13 0 0 1 5.127 4h14.46a1.172 1.172 0 0 1 0 2.345H5.127a.782.782 0 1 0 0 1.563h16.805a1.956 1.956 0 0 1 1.954 1.954v1.954h-3.908a3.908 3.908 0 0 0 0 7.816z"/>
+            <path id="XMLID_438_" class="cls-3" d="M28.253 16v4.69h-3.908a2.345 2.345 0 0 1 0-4.69z" transform="translate(-4.367 -2.62)"/>
+        </g>
+    </g>
+</svg>

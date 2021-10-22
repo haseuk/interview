@@ -171,5 +171,5 @@ window.onload = function() {
   let topBanX = document.querySelector('.t-ban-close');
   topBanX.addEventListener('click', function() {
     topBanner.classList.remove('on');
-  })
+  });
 }
