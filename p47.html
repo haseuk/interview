@@ -125,132 +125,131 @@
             </div>
             <div class="visual">
               <div class="select choice">
-                <a onclick="selList('choice')">계약건을 선택해주세요.</a>
+                <a class="s-label">계약건을 선택해주세요.</a>
                 <div class="select-list">
-                  <p>전체</p>
-                  <a>이메일</a>
-                  <a>이름</a>
-                  <a>종합점수</a>
+                  <a class="item">이메일</a>
+                  <a class="item">이름</a>
+                  <a class="item">종합점수</a>
                 </div>
               </div>
               <div class="v-wrap">
                 <div class="calendar">시작일 / 종료일 <img src="img/icon-calendar-bk.svg" alt=""></div>
                 <div class="select gender">
-                  <a onclick="selList('gender')">성별</a>
+                  <a class="s-label">성별</a>
                   <div class="select-list">
-                    <a>남성</a>
-                    <a>여성</a>
+                    <a class="item">남성</a>
+                    <a class="item">여성</a>
                   </div>
                 </div>
                 <div class="select age">
-                  <a onclick="selList('age')">연령</a>
+                  <a  class="s-label">연령</a>
                   <div class="select-list">
                     <div class="input-box">
-                      <label>
+                      <label class="item">
                         <s>19세 이하</s>
-                        <input type="checkbox">
+                        <input type="radio" name="age">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>20~25세</s>
-                        <input type="checkbox">
+                        <input type="radio" name="age">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>26~30세</s>
-                        <input type="checkbox">
+                        <input type="radio" name="age">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>31~35세</s>
-                        <input type="checkbox">
+                        <input type="radio" name="age">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>36~40세</s>
-                        <input type="checkbox">
+                        <input type="radio" name="age">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>45~50세</s>
-                        <input type="checkbox">
+                        <input type="radio" name="age">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>50세 이상</s>
-                        <input type="checkbox">
+                        <input type="radio" name="age">
                         <i></i>
                       </label>
                     </div>
                   </div>
                 </div>
                 <div class="select job-group">
-                  <a onclick="selList('job-group')">직군</a>
+                  <a class="s-label">직군</a>
                   <div class="select-list">
                     <div class="input-box">
-                      <label>
+                      <label class="item">
                         <s>경영/회계</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>사무/기획</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>공무원</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>보건/의료/복지</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>영업판매</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>마케팅</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>디자인</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>섬유/의류</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>서비스</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>엔지니어</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
-                      <label>
+                      <label class="item">
                         <s>물류/재고/유통</s>
-                        <input type="checkbox">
+                        <input type="radio" name="job">
                         <i></i>
                       </label>
                     </div>
                   </div>
                 </div>
                 <div class="select name-email">
-                  <a onclick="selList('name-email')">전체</a>
+                  <a class="s-label">전체</a>
                   <div class="select-list">
-                    <a>이메일</a>
-                    <a>이름</a>
+                    <a class="item">이메일</a>
+                    <a class="item">이름</a>
                   </div>
                 </div>
                 <div class="search">
@@ -433,12 +432,6 @@
     </div>
   </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20180112/classList.js" integrity="sha512-o+rGwtFqSwx4NQZz2mWw+gpSLXAQ3ZBKRJHCmS//gIpUl2fq8AzK6mpKlEG4r9EMMfebJCPjKRnZ+RePP2g++A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js"></script>
-<script>
-  function selList(v) {
-    let child = document.querySelector(`.${v}`);
-    child.classList.toggle('on');
-  }
-</script>
 </html>

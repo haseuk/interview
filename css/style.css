@@ -294,6 +294,16 @@ input {
   margin-right: auto;
   padding-bottom: 3.88888889rem;
   box-sizing: border-box;
+  zoom: 1;
+  position: relative;
+}
+.container .wrap article:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
 }
 .container .wrap article .top {
   width: 100%;
@@ -529,6 +539,17 @@ input {
 }
 .container .wrap article section .sec-inner .visual .status .star-l {
   float: left;
+}
+.container .wrap article.hold aside {
+  position: fixed;
+  left: 50%;
+  top: 0rem;
+  right: auto;
+  bottom: auto;
+  margin-left: -35.55555556rem;
+}
+.container .wrap article.hold section {
+  float: right;
 }
 .container .wrap.main article .top.m4 {
   background-image: url('../img/img_product.png');
@@ -841,6 +862,11 @@ input {
   margin-top: 0.88888889rem;
   display: inline-block;
   cursor: pointer;
+}
+.container .wrap.main article section .sec-inner.sec-inner2 .info-page .noti-win .cell .faq-arrow {
+  width: 1.22222222rem;
+  height: 1.22222222rem;
+  display: inline-block;
 }
 .container .wrap.main article section .sec-inner.sec-inner2 .info-page .noti-win .cell + .cell {
   position: relative;
@@ -1991,7 +2017,7 @@ input {
 .container .wrap.question article section .sec-inner .form-wrap .form-box label:last-child {
   margin-bottom: 0rem;
 }
-.container .wrap.question article section .sec-inner .form-wrap .form-box label input[type=checkbox] + i {
+.container .wrap.question article section .sec-inner .form-wrap .form-box label input[type=radio] + i {
   width: 0.88888889rem;
   height: 0.88888889rem;
   display: inline-block;
@@ -2001,7 +2027,7 @@ input {
   vertical-align: middle;
   margin-right: 0.55555556rem;
 }
-.container .wrap.question article section .sec-inner .form-wrap .form-box label input[type=checkbox]:checked + i {
+.container .wrap.question article section .sec-inner .form-wrap .form-box label input[type=radio]:checked + i {
   width: 0.88888889rem;
   height: 0.88888889rem;
   display: inline-block;
@@ -2023,7 +2049,7 @@ input {
 }
 .container .wrap.question article section .sec-inner .form-wrap .form-box .user-info input {
   font-size: 0.77777778rem;
-  color: #999;
+  color: #333;
   width: 11.11111111rem;
   height: 2.22222222rem;
   border: 1px solid #ddd;
@@ -2795,7 +2821,6 @@ input {
   background-color: #fafafa;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.dis td .select a {
-  pointer-events: none;
   color: #999;
 }
 .container .wrap.interview article section .sec-inner.registry .visual .v-wrap .table.dis td .select:after {
@@ -3055,7 +3080,7 @@ input {
   text-align: left;
   vertical-align: middle;
 }
-.container .wrap.manage article section .sec-inner .visual .select .select-list .input-box label input[type=checkbox] + i {
+.container .wrap.manage article section .sec-inner .visual .select .select-list .input-box label input[type=radio] + i {
   width: 0.88888889rem;
   height: 0.88888889rem;
   display: inline-block;
@@ -3065,7 +3090,7 @@ input {
   float: right;
   margin-top: 0.44444444rem;
 }
-.container .wrap.manage article section .sec-inner .visual .select .select-list .input-box label input[type=checkbox]:checked + i {
+.container .wrap.manage article section .sec-inner .visual .select .select-list .input-box label input[type=radio]:checked + i {
   width: 0.88888889rem;
   height: 0.88888889rem;
   display: inline-block;

@@ -78,7 +78,7 @@ textarea, input { outline: none; }
       &.on { .block; }
     }
 
-    article { .w(1280); .mh-c; .pb(70); .-box;
+    article { .w(1280); .mh-c; .pb(70); .-box; .clear; .rel;
       .top { .wh(100%,150); .contain; .no-repeat; .rel; .mb(30);
         h2 { .fs(26); .lh(40); .bold; }
 
@@ -148,6 +148,10 @@ textarea, input { outline: none; }
             }
           }
         }
+      }
+      &.hold {
+        aside { .fix; .lt(50%,0); .ml(-640); }
+        section { .fr; }
       }
     }
 
@@ -231,6 +235,7 @@ textarea, input { outline: none; }
                     .tit { .fs(20); .medium; .c-3; .mt(19); }
                     .txt { .fs(16); .c-9; .lh(26); .mt(18); }
                     a, span { .fs(13); .lh1; .c-pur; .mt(16); .ib; .pointer; }
+                    .faq-arrow { .wh(22,22); .ib; }
                   }
                   .cell + .cell { .rel;
                     &:after { .cnt; .wh(1,170); .bgc(#ddd); .abs; .lt(0,33); }
@@ -580,13 +585,13 @@ textarea, input { outline: none; }
                 .tit { .fs(16); .medium; .lh(23); .c-3; .mb(20); }
                 label { .block; .mb(20);
                   &:last-child { .mb(0); }
-                  input[type=checkbox] + i { .wh(16,16); .ib; .contain('../img/checkbox-none.svg'); .vam; .mr(10); }
-                  input[type=checkbox]:checked + i { .wh(16,16); .ib; .contain('../img/checkbox.svg'); }
+                  input[type=radio] + i { .wh(16,16); .ib; .contain('../img/checkbox-none.svg'); .vam; .mr(10); }
+                  input[type=radio]:checked + i { .wh(16,16); .ib; .contain('../img/checkbox.svg'); }
                   s { .fs(16); .lh(32); .c-3; .vam; }
                   input { .hide; }
                 }
                 .user-info { .tl;
-                  input { .fs(14); .c-9; .wh(200,40); .-a(#ddd); .lh(40);.pl(10); .-box; .mr(10);
+                  input { .fs(14); .c-3; .wh(200,40); .-a(#ddd); .lh(40);.pl(10); .-box; .mr(10);
                     &.comp { .w(410); .block; .mb(10); }
                   }
                 }
@@ -764,7 +769,7 @@ textarea, input { outline: none; }
                     &.dis {
                       td {
                         .select { .bgc(#fafafa);
-                          a { pointer-events: none; .c-9; }
+                          a { .c-9; }
                           &:after { opacity: 0.5;}
                         }
                         textarea { .fs(16); .tl; .c-3; .wh(874,283); font-family: 'Spoqa Han Sans Neo', 'sans-serif'; .-a(#ddd); .p(10); .-box; }
@@ -836,8 +841,8 @@ textarea, input { outline: none; }
                   .input-box { .p(0,10); .-box;
                     label { .block; .h(35); .lh(35);
                       s { .fs(14); .lh(19); .c-3; .tl; .vam; }
-                      input[type=checkbox] + i { .wh(16,16); .ib; .contain('../img/checkbox-none.svg'); .fr; .mt(8); }
-                      input[type=checkbox]:checked + i { .wh(16,16); .ib; .contain('../img/checkbox.svg'); }
+                      input[type=radio] + i { .wh(16,16); .ib; .contain('../img/checkbox-none.svg'); .fr; .mt(8); }
+                      input[type=radio]:checked + i { .wh(16,16); .ib; .contain('../img/checkbox.svg'); }
                       input { .hide; }
                     }
                   }

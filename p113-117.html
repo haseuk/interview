@@ -354,6 +354,7 @@
     </div>
   </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20180112/classList.js" integrity="sha512-o+rGwtFqSwx4NQZz2mWw+gpSLXAQ3ZBKRJHCmS//gIpUl2fq8AzK6mpKlEG4r9EMMfebJCPjKRnZ+RePP2g++A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
 <script>
   let paymentWrap = document.querySelector('.payment-wrap');
@@ -362,27 +363,27 @@
     Array.prototype.forEach.call(payments, function(e) {
       e.classList.remove('on');
     });
-    let type = document.querySelector(`.${v}`);
+    let type = document.querySelector('.'+v);
     type.classList.add('on');
     paymentWrap.classList.remove('active-card', 'active-wallet', 'active-coin')
-    paymentWrap.classList.toggle(`active-${v}`);
+    paymentWrap.classList.toggle('active-'+v);
   }
 
   function agree(v) {
-    let type = document.querySelector(`.${v}`);
+    let type = document.querySelector('.'+v);
     type.classList.toggle('on');
   }
 
   let wallet = document.querySelector('.wallet-wrap');
   function typeValu(v) {
     wallet.classList.remove('tax-method','cash-method','empty-method');
-    wallet.classList.add(`${v}-method`);
+    wallet.classList.add(v+'-method');
   }
 
   let cash = document.querySelector('.cash');
   function purp(v) {
     cash.classList.remove('office-cash','operator-cash');
-    cash.classList.add(`${v}-cash`);
+    cash.classList.add(v+'-cash');
   }
 
 </script>

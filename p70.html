@@ -124,30 +124,30 @@
             </div>
             <div class="visual">
               <div class="select choice">
-                <a onclick="selList('choice')">채용공고를 선택해 주세요.</a>
+                <a class="s-label">채용공고를 선택해 주세요.</a>
                 <div class="select-list">
-                  <p>전체</p>
-                  <a>이메일</a>
-                  <a>이름</a>
-                  <a>종합점수</a>
+                  <a class="item">전체</a>
+                  <a class="item">이메일</a>
+                  <a class="item">이름</a>
+                  <a class="item">종합점수</a>
                 </div>
               </div>
               <div class="v-wrap mb-0">
                 <div class="calendar">시작일 / 종료일 <img src="img/icon-calendar-bk.svg" alt=""></div>
                 <div class="select field w-120">
-                  <a onclick="selList('field')">모집분야</a>
+                  <a class="s-label">모집분야</a>
                   <div class="select-list">
-                    <a>남성</a>
-                    <a>여성</a>
+                    <a class="item">서비스</a>
+                    <a class="item">서비스</a>
                   </div>
                 </div>
                 <div class="biz-se">
                   <div class="select name-email">
-                    <a onclick="selList('name-email')">전체</a>
+                    <a class="s-label">전체</a>
                     <div class="select-list">
-                      <a>채용공고명</a>
-                      <a>담당자</a>
-                      <a>지원자명</a>
+                      <a class="item">채용공고명</a>
+                      <a class="item">담당자</a>
+                      <a class="item">지원자명</a>
                     </div>
                   </div>
                   <div class="search">
@@ -170,10 +170,10 @@
                   <a class="down-btn">엑셀 다운 <img src="img/icon-download-pur.svg" alt=""></a>
                   <div class="v-wrap">
                     <div class="select last-enroll">
-                      <a onclick="selList('last-enroll')">최근 등록순</a>
+                      <a class="s-label">최근 등록순</a>
                       <div class="select-list">
-                        <a>최근등록순</a>
-                        <a>최근 면접일시순메일</a>
+                        <a class="item">최근등록순</a>
+                        <a class="item">최근 면접일시순</a>
                       </div>
                     </div>
                   </div>
@@ -219,12 +219,6 @@
     </div>
   </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20180112/classList.js" integrity="sha512-o+rGwtFqSwx4NQZz2mWw+gpSLXAQ3ZBKRJHCmS//gIpUl2fq8AzK6mpKlEG4r9EMMfebJCPjKRnZ+RePP2g++A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js"></script>
-<script>
-  function selList(v) {
-    let child = document.querySelector(`.${v}`);
-    child.classList.toggle('on');
-  }
-</script>
 </html>
