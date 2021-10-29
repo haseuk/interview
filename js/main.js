@@ -87,18 +87,4 @@ window.onload = function() {
     label.innerHTML = item.textContent;
     label.parentNode.classList.remove('on');
   }
-
-  let article = document.querySelector('article');
-  let aside = document.querySelector('aside');
-
-  window.addEventListener('scroll', function() {
-    let scTop = document.documentElement.scrollTop;
-    let asTop = aside.getBoundingClientRect().top;
-    console.log(scTop, asTop)
-    if(scTop >= 280) {
-      article.classList.add('hold');
-    } else {
-      article.classList.remove('hold');
-    }
-  });
 }

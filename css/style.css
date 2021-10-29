@@ -54,7 +54,6 @@ input {
 }
 .container .wrap {
   font-size: 0rem;
-  overflow: hidden;
 }
 .container .wrap .top-banner {
   background: url("../img/img-topbanner-biz.png") no-repeat center top;
@@ -399,6 +398,8 @@ input {
   margin-right: 1.11111111rem;
   display: inline-block;
   vertical-align: top;
+  position: sticky;
+  top: 1.11111111rem;
 }
 .container .wrap article aside p {
   line-height: 1.44444444rem;
